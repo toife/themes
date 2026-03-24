@@ -1,0 +1,128 @@
+$layer-checkbox: (
+  "primary": (
+    "background-color": (
+      "": ("primary", 550),
+      "hover": ("primary", 650),
+      "inactive": ("primary", 350),
+      "contrast": ("light", 950),
+      "disabled": ("primary", 250),
+    ),
+    "color": ("light", 900),
+    "border-color": (
+      "": ("primary", 550),
+      "inactive": ("primary", 350),
+    ),
+  ),
+  "light": (
+    "background-color": (
+      "": ("light", 700),
+      "hover": ("light", 800),
+      "inactive": ("light", 500),
+      "contrast": ("light", 950),
+      "disabled": ("light", 400),
+    ),
+    "color": ("dark", 900),
+    "border-color": (
+      "": ("light", 700),
+      "inactive": ("light", 500),
+    ),
+  ),
+  "dark": (
+    "background-color": (
+      "": ("dark", 700),
+      "hover": ("dark", 800),
+      "inactive": ("dark", 500),
+      "contrast": ("light", 950),
+      "disabled": ("dark", 400),
+    ),
+    "color": ("light", 900),
+    "border-color": (
+      "": ("dark", 700),
+      "inactive": ("dark", 500),
+    ),
+  ),
+  "danger": (
+    "background-color": (
+      "": ("danger", 550),
+      "hover": ("danger", 650),
+      "inactive": ("danger", 350),
+      "contrast": ("light", 950),
+      "disabled": ("danger", 250),
+    ),
+    "color": ("light", 900),
+    "border-color": (
+      "": ("danger", 550),
+      "inactive": ("danger", 350),
+    ),
+  ),
+  "success": (
+    "background-color": (
+      "": ("success", 550),
+      "hover": ("success", 650),
+      "inactive": ("success", 350),
+      "contrast": ("light", 950),
+      "disabled": ("success", 250),
+    ),
+    "color": ("light", 900),
+    "border-color": (
+      "": ("success", 550),
+      "inactive": ("success", 350),
+    ),
+  ),
+  "info": (
+    "background-color": (
+      "": ("info", 550),
+      "hover": ("info", 650),
+      "inactive": ("info", 350),
+      "contrast": ("light", 950),
+      "disabled": ("info", 250),
+    ),
+    "color": ("light", 900),
+    "border-color": (
+      "": ("info", 550),
+      "inactive": ("info", 350),
+    ),
+  ),
+  "warning": (
+    "background-color": (
+      "": ("warning", 550),
+      "hover": ("warning", 650),
+      "inactive": ("warning", 350),
+      "contrast": ("light", 950),
+      "disabled": ("warning", 250),
+    ),
+    "color": ("dark", 900),
+    "border-color": (
+      "": ("warning", 550),
+      "inactive": ("warning", 350),
+    ),
+  ),
+  "reverse": (
+    "background-color": (
+      "": ("dark", 650),
+      "hover": ("dark", 750),
+      "inactive": ("dark", 450),
+      "contrast": ("light", 950),
+      "disabled": ("dark", 350),
+    ),
+    "color": ("light", 900),
+    "border-color": (
+      "": ("dark", 650),
+      "inactive": ("dark", 450),
+    ),
+  ),
+  "mode": (
+    "background-color": (
+      "": ("light", 950),
+      "hover": ("light", 800),
+      "inactive": ("light", 500),
+      "contrast": ("light", 950),
+      "disabled": ("light", 400),
+    ),
+    "color": ("dark", 900),
+    "border-color": (
+      "": ("light", 750),
+      "inactive": ("light", 500),
+    ),
+  ),
+);

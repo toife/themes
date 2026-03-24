@@ -1,0 +1,27 @@
+// Matches vue action.scss: action-border-color only (divider between buttons; no states).
+$layer-action: (
+  "primary": (
+    "border-color": ("primary", 550),
+  ),
+  "light": (
+    "border-color": ("light", 700),
+  ),
+  "dark": (
+    "border-color": ("dark", 700),
+  ),
+  "danger": (
+    "border-color": ("danger", 550),
+  ),
+  "success": (
+    "border-color": ("success", 550),
+  ),
+  "info": (
+    "border-color": ("info", 550),
+  ),
+  "warning": (
+    "border-color": ("warning", 550),
+  ),
+  "mode": (
+    "border-color": ("light", 750),
+  ),
+);

@@ -1,0 +1,4 @@
+@use "@toife/sass-layer-generator" with (
+  $prefix: "t",
+  $separator: "-"
+);

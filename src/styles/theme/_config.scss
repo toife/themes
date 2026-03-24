@@ -1,0 +1,102 @@
+// Shared config (same for dark & light)
+$spacing-x: 0.25rem !default;
+$spacing-y: 0.25rem !default;
+$spacing: (
+  "x": $spacing-x,
+  "y": $spacing-y,
+) !default;
+
+$stroke-width: 0.55px !default;
+$stroke: (
+  "width": $stroke-width,
+) !default;
+
+$duration: 0.25s !default;
+$motion: (
+  "duration": $duration,
+) !default;
+
+$viewport-width: 100vw !default;
+$viewport-height: 100vh !default;
+$viewport-max-width: 100vw !default;
+$viewport-max-height: 100vh !default;
+$viewport: (
+  "width": $viewport-width,
+  "height": $viewport-height,
+  "max-width": $viewport-max-width,
+  "max-height": $viewport-max-height,
+) !default;
+
+$overlay-max-width: 300px !default;
+$overlay-max-height: 300px !default;
+$overlay: (
+  "max-width": $overlay-max-width,
+  "max-height": $overlay-max-height,
+) !default;
+
+$shapes: (
+  "flat": (
+    "border-radius": 0rem,
+  ),
+  "rounded": (
+    "border-radius": 0.5rem,
+  ),
+  "pill": (
+    "border-radius": 2rem,
+  ),
+) !default;
+
+$sizes: (
+  "small": (
+    "height": 28px,
+    "font-size": 0.8em,
+    "line-height": 1.5,
+    "coefficient-x": 2,
+    "coefficient-y": 1,
+  ),
+  "standard": (
+    "height": 38px,
+    "font-size": 1em,
+    "line-height": 1.5,
+    "coefficient-x": 3,
+    "coefficient-y": 2,
+  ),
+  "large": (
+    "height": 48px,
+    "font-size": 1.2em,
+    "line-height": 1.5,
+    "coefficient-x": 4,
+    "coefficient-y": 3,
+  ),
+) !default;
+
+$roles: (
+  "light": (
+    #ffffff,
+    950,
+  ),
+  "dark": (
+    #000000,
+    950,
+  ),
+  "primary": (
+    #0152a8,
+    550,
+  ),
+  "danger": (
+    #dc3545,
+    550,
+  ),
+  "success": (
+    #1c9172,
+    550,
+  ),
+  "info": (
+    #148ad9,
+    550,
+  ),
+  "warning": (
+    #ffc107,
+    550,
+  ),
+) !default;

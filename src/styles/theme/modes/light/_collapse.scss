@@ -1,0 +1,35 @@
+// Matches vue collapse.scss: collapse-background-color, collapse-color (no states).
+$layer-collapse: (
+  "primary": (
+    "background-color": ("primary", 550),
+    "color": ("light", 900),
+  ),
+  "light": (
+    "background-color": ("light", 700),
+    "color": ("dark", 900),
+  ),
+  "dark": (
+    "background-color": ("dark", 700),
+    "color": ("light", 900),
+  ),
+  "danger": (
+    "background-color": ("danger", 550),
+    "color": ("light", 900),
+  ),
+  "success": (
+    "background-color": ("success", 550),
+    "color": ("light", 900),
+  ),
+  "info": (
+    "background-color": ("info", 550),
+    "color": ("light", 900),
+  ),
+  "warning": (
+    "background-color": ("warning", 550),
+    "color": ("dark", 900),
+  ),
+  "mode": (
+    "background-color": ("light", 950),
+    "color": ("dark", 900),
+  ),
+);

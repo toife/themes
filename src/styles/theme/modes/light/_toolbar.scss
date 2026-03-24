@@ -1,0 +1,27 @@
+// Matches vue toolbar.scss: toolbar-background-color only (no states).
+$layer-toolbar: (
+  "primary": (
+    "background-color": ("primary", 550),
+  ),
+  "light": (
+    "background-color": ("light", 700),
+  ),
+  "dark": (
+    "background-color": ("dark", 700),
+  ),
+  "danger": (
+    "background-color": ("danger", 550),
+  ),
+  "success": (
+    "background-color": ("success", 550),
+  ),
+  "info": (
+    "background-color": ("info", 550),
+  ),
+  "warning": (
+    "background-color": ("warning", 550),
+  ),
+  "mode": (
+    "background-color": ("light", 950),
+  ),
+);

@@ -1,0 +1,16 @@
+@use "./modes/light" as light;
+@use "./config" as config;
+
+$theme: (
+  "modes": (
+    "light": ("layers": light.$layers)
+  ),
+  "roles": config.$roles,
+  "spacing": config.$spacing,
+  "stroke": config.$stroke,
+  "shapes": config.$shapes,
+  "motion": config.$motion,
+  "viewport": config.$viewport,
+  "overlay": config.$overlay,
+  "sizes": config.$sizes,
+);

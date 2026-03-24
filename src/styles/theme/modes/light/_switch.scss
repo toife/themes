@@ -1,0 +1,147 @@
+// Matches vue switch.scss: background-color (on, hover, inactive, disabled, contrast); border-color (focus ring); color.strong (optional token).
+$layer-switch: (
+  "primary": (
+    "background-color": (
+      "": ("primary", 550),
+      "hover": ("primary", 650),
+      "inactive": ("primary", 350),
+      "disabled": ("primary", 250),
+      "contrast": ("light", 950),
+    ),
+    "border-color": (
+      "": ("primary", 550),
+      "focus": ("primary", 750),
+    ),
+    "color": (
+      "strong": ("light", 900),
+    ),
+  ),
+  "light": (
+    "background-color": (
+      "": ("light", 700),
+      "hover": ("light", 800),
+      "inactive": ("light", 500),
+      "disabled": ("light", 400),
+      "contrast": ("light", 950),
+    ),
+    "border-color": (
+      "": ("light", 700),
+      "focus": ("light", 900),
+    ),
+    "color": (
+      "strong": ("dark", 900),
+    ),
+  ),
+  "dark": (
+    "background-color": (
+      "": ("dark", 700),
+      "hover": ("dark", 800),
+      "inactive": ("dark", 500),
+      "disabled": ("dark", 400),
+      "contrast": ("light", 950),
+    ),
+    "border-color": (
+      "": ("dark", 700),
+      "focus": ("dark", 900),
+    ),
+    "color": (
+      "strong": ("light", 900),
+    ),
+  ),
+  "danger": (
+    "background-color": (
+      "": ("danger", 550),
+      "hover": ("danger", 650),
+      "inactive": ("danger", 350),
+      "disabled": ("danger", 250),
+      "contrast": ("light", 950),
+    ),
+    "border-color": (
+      "": ("danger", 550),
+      "focus": ("danger", 750),
+    ),
+    "color": (
+      "strong": ("light", 900),
+    ),
+  ),
+  "success": (
+    "background-color": (
+      "": ("success", 550),
+      "hover": ("success", 650),
+      "inactive": ("success", 350),
+      "disabled": ("success", 250),
+      "contrast": ("light", 950),
+    ),
+    "border-color": (
+      "": ("success", 550),
+      "focus": ("success", 750),
+    ),
+    "color": (
+      "strong": ("light", 900),
+    ),
+  ),
+  "info": (
+    "background-color": (
+      "": ("info", 550),
+      "hover": ("info", 650),
+      "inactive": ("info", 350),
+      "disabled": ("info", 250),
+      "contrast": ("light", 950),
+    ),
+    "border-color": (
+      "": ("info", 550),
+      "focus": ("info", 750),
+    ),
+    "color": (
+      "strong": ("light", 900),
+    ),
+  ),
+  "warning": (
+    "background-color": (
+      "": ("warning", 550),
+      "hover": ("warning", 650),
+      "inactive": ("warning", 350),
+      "disabled": ("warning", 250),
+      "contrast": ("light", 950),
+    ),
+    "border-color": (
+      "": ("warning", 550),
+      "focus": ("warning", 750),
+    ),
+    "color": (
+      "strong": ("dark", 900),
+    ),
+  ),
+  "reverse": (
+    "background-color": (
+      "": ("dark", 650),
+      "hover": ("dark", 750),
+      "inactive": ("dark", 450),
+      "disabled": ("dark", 350),
+      "contrast": ("light", 950),
+    ),
+    "border-color": (
+      "": ("dark", 650),
+      "focus": ("dark", 850),
+    ),
+    "color": (
+      "strong": ("light", 900),
+    ),
+  ),
+  "mode": (
+    "background-color": (
+      "": ("light", 950),
+      "hover": ("light", 800),
+      "inactive": ("light", 500),
+      "disabled": ("light", 400),
+      "contrast": ("light", 950),
+    ),
+    "border-color": (
+      "": ("light", 750),
+      "focus": ("light", 900),
+    ),
+    "color": (
+      "strong": ("dark", 900),
+    ),
+  ),
+);

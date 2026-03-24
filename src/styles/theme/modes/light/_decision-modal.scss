@@ -1,0 +1,35 @@
+// Matches vue decision-modal.scss: decision-modal-background-color, decision-modal-border-color (no states).
+$layer-decision-modal: (
+  "primary": (
+    "background-color": ("primary", 550),
+    "border-color": ("primary", 550),
+  ),
+  "light": (
+    "background-color": ("light", 700),
+    "border-color": ("light", 700),
+  ),
+  "dark": (
+    "background-color": ("dark", 700),
+    "border-color": ("dark", 700),
+  ),
+  "danger": (
+    "background-color": ("danger", 550),
+    "border-color": ("danger", 550),
+  ),
+  "success": (
+    "background-color": ("success", 550),
+    "border-color": ("success", 550),
+  ),
+  "info": (
+    "background-color": ("info", 550),
+    "border-color": ("info", 550),
+  ),
+  "warning": (
+    "background-color": ("warning", 550),
+    "border-color": ("warning", 550),
+  ),
+  "mode": (
+    "background-color": ("light", 950),
+    "border-color": ("light", 750),
+  ),
+);
