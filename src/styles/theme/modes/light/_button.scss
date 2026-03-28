@@ -1,26 +1,29 @@
 // Matches vue button.scss: color; background-color / border-color with
 // default ("") + hover, focus, active, disabled only.
 $layer-button: (
-  "primary": (
+  "mode": (
     "background-color": (
-      "": ("primary", 550),
-      "hover": ("primary", 650),
-      "focus": ("primary", 750),
-      "active": ("primary", 750),
-      "disabled": ("primary", 250),
+      "": ("dark", 700),
+      "hover": ("dark", 800),
+      "focus": ("dark", 900),
+      "active": ("dark", 900),
+      "disabled": ("dark", 400),
     ),
     "color": ("light", 900),
     "border-color": (
-      "": ("primary", 550),
-      "hover": ("primary", 650),
-      "focus": ("primary", 750),
-      "active": ("primary", 750),
-      "disabled": ("primary", 250),
+      "": ("dark", 700),
+      "hover": ("dark", 800),
+      "focus": ("dark", 900),
+      "active": ("dark", 900),
+      "disabled": ("dark", 400),
+    ),
+    "box-shadow-color": (
+      "focus": ("dark", 900),
     ),
   ),
-  "light": (
+  "reverse": (
     "background-color": (
-      "": ("light", 700),
+      "": ("light", 950),
       "hover": ("light", 800),
       "focus": ("light", 900),
       "active": ("light", 900),
@@ -28,13 +31,38 @@ $layer-button: (
     ),
     "color": ("dark", 900),
     "border-color": (
-      "": ("light", 700),
+      "": ("light", 750),
       "hover": ("light", 800),
       "focus": ("light", 900),
       "active": ("light", 900),
       "disabled": ("light", 400),
     ),
+    "box-shadow-color": (
+      "focus": ("light", 900),
+    ),
   ),
+
+  "light": (
+    "background-color": (
+      "": ("light", 950),
+      "hover": ("light", 800),
+      "focus": ("light", 900),
+      "active": ("light", 900),
+      "disabled": ("light", 400),
+    ),
+    "color": ("dark", 900),
+    "border-color": (
+      "": ("light", 750),
+      "hover": ("light", 800),
+      "focus": ("light", 900),
+      "active": ("light", 900),
+      "disabled": ("light", 400),
+    ),
+    "box-shadow-color": (
+      "focus": ("light", 900),
+    ),
+  ),
+
   "dark": (
     "background-color": (
       "": ("dark", 700),
@@ -51,7 +79,32 @@ $layer-button: (
       "active": ("dark", 900),
       "disabled": ("dark", 400),
     ),
+    "box-shadow-color": (
+      "focus": ("dark", 900),
+    ),
   ),
+
+  "primary": (
+    "background-color": (
+      "": ("primary", 550),
+      "hover": ("primary", 650),
+      "focus": ("primary", 750),
+      "active": ("primary", 750),
+      "disabled": ("primary", 250),
+    ),
+    "color": ("light", 900),
+    "border-color": (
+      "": ("primary", 550),
+      "hover": ("primary", 650),
+      "focus": ("primary", 750),
+      "active": ("primary", 750),
+      "disabled": ("primary", 250),
+    ),
+    "box-shadow-color": (
+      "focus": ("primary", 900),
+    ),
+  ),
+
   "danger": (
     "background-color": (
       "": ("danger", 550),
@@ -67,6 +120,9 @@ $layer-button: (
       "focus": ("danger", 750),
       "active": ("danger", 750),
       "disabled": ("danger", 250),
+    ),
+    "box-shadow-color": (
+      "focus": ("danger", 900),
     ),
   ),
   "success": (
@@ -85,6 +141,9 @@ $layer-button: (
       "active": ("success", 750),
       "disabled": ("success", 250),
     ),
+    "box-shadow-color": (
+      "focus": ("success", 900),
+    ),
   ),
   "info": (
     "background-color": (
@@ -101,6 +160,9 @@ $layer-button: (
       "focus": ("info", 750),
       "active": ("info", 750),
       "disabled": ("info", 250),
+    ),
+    "box-shadow-color": (
+      "focus": ("info", 900),
     ),
   ),
   "warning": (
@@ -119,39 +181,8 @@ $layer-button: (
       "active": ("warning", 750),
       "disabled": ("warning", 250),
     ),
-  ),
-  "reverse": (
-    "background-color": (
-      "": ("dark", 650),
-      "hover": ("dark", 750),
-      "focus": ("dark", 850),
-      "active": ("dark", 850),
-      "disabled": ("dark", 350),
+    "box-shadow-color": (
+      "focus": ("warning", 900),
     ),
-    "color": ("light", 900),
-    "border-color": (
-      "": ("dark", 650),
-      "hover": ("dark", 750),
-      "focus": ("dark", 850),
-      "active": ("dark", 850),
-      "disabled": ("dark", 350),
-    ),
-  ),
-  "mode": (
-    "background-color": (
-      "": ("light", 950),
-      "hover": ("light", 800),
-      "focus": ("light", 900),
-      "active": ("light", 900),
-      "disabled": ("light", 400),
-    ),
-    "color": ("dark", 900),
-    "border-color": (
-      "": ("light", 750),
-      "hover": ("light", 800),
-      "focus": ("light", 900),
-      "active": ("light", 900),
-      "disabled": ("light", 400),
-    ),
-  ),
+  )
 );

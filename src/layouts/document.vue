@@ -13,7 +13,13 @@
               Home
             </a>
           </router-link>
-          <router-link class="document-sidebar-link" to="/docs">Docs</router-link>
+          <router-link class="document-sidebar-link" to="/components/button">Button</router-link>
+          <router-link class="document-sidebar-link" to="/components/switch">Switch</router-link>
+          <router-link class="document-sidebar-link" to="/components/action">Action</router-link>
+          <router-link class="document-sidebar-link" to="/components/avatar">Avatar</router-link>
+          <router-link class="document-sidebar-link" to="/components/card">Card</router-link>
+          <router-link class="document-sidebar-link" to="/components/checkbox">Checkbox</router-link>
+          <router-link class="document-sidebar-link" to="/components/radio">Radio</router-link>
         </nav>
       </aside>
 
@@ -93,7 +99,6 @@
 .document-main {
   flex: 1;
   min-width: 0;
-  overflow: auto;
-  margin: 1rem;
+  position: relative;
 }
 </style>

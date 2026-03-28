@@ -1,26 +1,38 @@
 $layer-avatar: (
-  "primary": (
-    "background-color": ("primary", 550)
+  "mode": (
+    "background-color": ("dark", 850),
+    "border-color": ("dark", 800)
+  ),
+  "reverse": (
+    "background-color": ("light", 800),
+    "border-color": ("light", 800)
   ),
   "light": (
-    "background-color": ("light", 950)
+    "background-color": ("light", 850),
+    "border-color": ("light", 800)
   ),
   "dark": (
-    "background-color": ("dark", 800)
+    "background-color": ("dark", 800),
+    "border-color": ("dark", 800)
+  ),
+  "primary": (
+    "background-color": ("primary", 550),
+    "border-color": ("primary", 550)
   ),
   "danger": (
-    "background-color": ("danger", 950)
+    "background-color": ("danger", 550),
+    "border-color": ("danger", 550)
   ),
   "success": (
-    "background-color": ("success", 950)
+    "background-color": ("success", 550),
+    "border-color": ("success", 550)
   ),
   "info": (
-    "background-color": ("info", 950)
+    "background-color": ("info", 550),
+    "border-color": ("info", 550)
   ),
   "warning": (
-    "background-color": ("warning", 950)
-  ),
-  "mode": (
-    "background-color": ("light", 950)
+    "background-color": ("warning", 550),
+    "border-color": ("warning", 550)
   ),
 );

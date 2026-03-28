@@ -1,43 +1,48 @@
 // Matches vue card components: card-background-color, card-color, card-border-color (no states).
 $layer-card: (
-  "primary": (
-    "background-color": ("primary", 550),
+  "mode": (
+    "background-color": ("light", 950),
+    "color": ("dark", 900),
+    "border-color": ("light", 850),
+  ),
+  "reverse": (
+    "background-color": ("dark", 700),
     "color": ("light", 900),
-    "border-color": ("primary", 550),
+    "border-color": ("dark", 850),
   ),
   "light": (
-    "background-color": ("light", 700),
+    "background-color": ("light", 950),
     "color": ("dark", 900),
-    "border-color": ("light", 700),
+    "border-color": ("light", 850),
   ),
   "dark": (
     "background-color": ("dark", 700),
     "color": ("light", 900),
-    "border-color": ("dark", 700),
+    "border-color": ("dark", 850),
+  ),
+  "primary": (
+    "background-color": ("primary", 550),
+    "color": ("light", 900),
+    "border-color": ("primary", 800),
   ),
   "danger": (
     "background-color": ("danger", 550),
     "color": ("light", 900),
-    "border-color": ("danger", 550),
+    "border-color": ("danger", 800),
   ),
   "success": (
     "background-color": ("success", 550),
     "color": ("light", 900),
-    "border-color": ("success", 550),
+    "border-color": ("success", 800),
   ),
   "info": (
     "background-color": ("info", 550),
     "color": ("light", 900),
-    "border-color": ("info", 550),
+    "border-color": ("info", 800),
   ),
   "warning": (
     "background-color": ("warning", 550),
     "color": ("dark", 900),
-    "border-color": ("warning", 550),
-  ),
-  "mode": (
-    "background-color": ("light", 950),
-    "color": ("dark", 900),
-    "border-color": ("light", 750),
+    "border-color": ("warning", 800),
   ),
 );

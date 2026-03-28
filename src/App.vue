@@ -1,8 +1,7 @@
 <template>
-  <t-app :shape="shape" :divider="isDivider" :shadow="isShadow" :direction="direction" :class="{['t-mode-' + mode]: true}">
+  <t-app :shape="shape" :divider="isDivider" :shadow="isShadow" :direction="direction">
     <t-cable placement="top">
       <t-toolbar class="header-toolbar">
-        <t-switch v-model="isDarkMode">{{ mode }}</t-switch>
         <t-switch v-model="isShadow">Shadow</t-switch>
         <t-radio-group v-model="direction" orientation="horizontal">
           <t-radio value="left">Left</t-radio>
@@ -40,8 +39,4 @@ const direction = ref<"left" | "right">("left");
 const isDarkMode = ref<boolean>(false);
 const isShadow = ref<boolean>(false);
 const isDivider = ref<boolean>(false);
-
-const mode = computed(() => {
-  return isDarkMode.value ? "dark" : "light";
-});
 </script>
