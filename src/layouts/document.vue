@@ -165,6 +165,9 @@ const componentNavGroups: ComponentNavGroup[] = [
       { to: "/components/card", label: "Card", tag: "t-card" },
       { to: "/components/collapse", label: "Collapse", tag: "t-collapse" },
       { to: "/components/divider", label: "Divider", tag: "t-divider" },
+      { to: "/components/app", label: "App", tag: "t-app" },
+      { to: "/components/cable", label: "Cable", tag: "t-cable" },
+      { to: "/components/page", label: "Page", tag: "t-page" },
     ],
   },
   {
@@ -173,6 +176,7 @@ const componentNavGroups: ComponentNavGroup[] = [
     items: [
       { to: "/components/tabs", label: "Tabs", tag: "t-tabs" },
       { to: "/components/toolbar", label: "Toolbar", tag: "t-toolbar" },
+      { to: "/components/route", label: "Route stack", tag: "t-route-wrapper" },
     ],
   },
   {
@@ -180,6 +184,7 @@ const componentNavGroups: ComponentNavGroup[] = [
     icon: "overlay",
     items: [
       { to: "/components/modal", label: "Modal", tag: "t-modal" },
+      { to: "/components/present", label: "Present", tag: "t-present" },
       { to: "/components/decision-modal", label: "Decision modal", tag: "t-decision-modal" },
       { to: "/components/toast", label: "Toast", tag: "t-toast" },
       { to: "/components/action", label: "Action", tag: "t-action" },
