@@ -1,8 +1,12 @@
 // Matches field outline: field-background-color (message), field-border-color (no states).
 $layer-field: (
-  "primary": (
-    "background-color": ("primary", 550),
-    "border-color": ("primary", 550),
+  "mode": (
+    "background-color": ("light", 900),
+    "border-color": ("light", 700),
+  ),
+  "reverse": (
+    "background-color": ("dark", 650),
+    "border-color": ("dark", 650),
   ),
   "light": (
     "background-color": ("light", 700),
@@ -12,9 +16,9 @@ $layer-field: (
     "background-color": ("dark", 700),
     "border-color": ("dark", 700),
   ),
-  "danger": (
-    "background-color": ("danger", 550),
-    "border-color": ("danger", 550),
+  "primary": (
+    "background-color": ("primary", 550),
+    "border-color": ("primary", 550),
   ),
   "success": (
     "background-color": ("success", 550),
@@ -28,12 +32,8 @@ $layer-field: (
     "background-color": ("warning", 550),
     "border-color": ("warning", 550),
   ),
-  "reverse": (
-    "background-color": ("dark", 650),
-    "border-color": ("dark", 650),
-  ),
-  "mode": (
-    "background-color": ("light", 900),
-    "border-color": ("light", 700),
+  "danger": (
+    "background-color": ("danger", 550),
+    "border-color": ("danger", 550),
   ),
 );

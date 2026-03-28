@@ -1,6 +1,6 @@
 // Matches vue switch.scss: background-color (on, hover, off, disabled, contrast); border-color (focus ring); color.strong (optional token).
 $layer-switch: (
-  "light": (
+  "mode": (
     "background-color": (
       "focus": ("dark", 900),
       "on": ("dark", 800),
@@ -11,13 +11,30 @@ $layer-switch: (
       "focus": ("dark", 300)
     ),
     "color": (
-      "on": ("light", 900),
-      "off": ("light", 900),
-      "disabled": ("light", 900)
+      "on": ("light", 950),
+      "off": ("light", 950),
+      "disabled": ("light", 950)
     ),
   ),
 
-  "dark": (
+  "reverse": (
+    "background-color": (
+      "focus": ("light", 900),
+      "on": ("light", 800),
+      "off": ("light", 800),
+      "disabled": ("light", 400)
+    ),
+    "box-shadow-color": (
+      "focus": ("dark", 300)
+    ),
+    "color": (
+      "on": ("dark", 900),
+      "off": ("dark", 900),
+      "disabled": ("dark", 900)
+    ),
+  ),
+
+  "light": (
     "background-color": (
       "focus": ("light", 900),
       "on": ("light", 800),
@@ -34,6 +51,23 @@ $layer-switch: (
     ),
   ),
 
+  "dark": (
+    "background-color": (
+      "focus": ("dark", 900),
+      "on": ("dark", 800),
+      "off": ("dark", 200),
+      "disabled": ("dark", 400)
+    ),
+    "box-shadow-color": (
+      "focus": ("dark", 300)
+    ),
+    "color": (
+      "on": ("light", 950),
+      "off": ("light", 950),
+      "disabled": ("light", 950)
+    ),
+  ),
+
   "primary": (
     "background-color": (
       "focus": ("primary", 900),
@@ -43,23 +77,6 @@ $layer-switch: (
     ),
     "box-shadow-color": (
       "focus": ("primary", 550)
-    ),
-    "color": (
-      "on": ("light", 950),
-      "off": ("light", 950),
-      "disabled": ("light", 950)
-    ),
-  ),
-  
-  "danger": (
-    "background-color": (
-      "focus": ("danger", 900),
-      "on": ("danger", 550),
-      "off": ("dark", 200),
-      "disabled": ("danger", 400)
-    ),
-    "box-shadow-color": (
-      "focus": ("danger", 550)
     ),
     "color": (
       "on": ("light", 950),
@@ -101,7 +118,7 @@ $layer-switch: (
       "disabled": ("light", 950)
     ),
   ),
-  
+
   "warning": (
     "background-color": (
       "focus": ("warning", 900),
@@ -118,38 +135,21 @@ $layer-switch: (
       "disabled": ("light", 950)
     ),
   ),
-  
-  "reverse": (
-    "background-color": (
-      "focus": ("light", 900),
-      "on": ("light", 800),
-      "off": ("light", 800),
-      "disabled": ("light", 400)
-    ),
-    "box-shadow-color": (
-      "focus": ("dark", 300)
-    ),
-    "color": (
-      "on": ("dark", 900),
-      "off": ("dark", 900),
-      "disabled": ("dark", 900)
-    ),
-  ),
 
-  "mode": (
+  "danger": (
     "background-color": (
-      "focus": ("dark", 900),
-      "on": ("dark", 800),
+      "focus": ("danger", 900),
+      "on": ("danger", 550),
       "off": ("dark", 200),
-      "disabled": ("dark", 400)
+      "disabled": ("danger", 400)
     ),
     "box-shadow-color": (
-      "focus": ("dark", 300)
+      "focus": ("danger", 550)
     ),
     "color": (
-      "on": ("light", 900),
-      "off": ("light", 900),
-      "disabled": ("light", 900)
+      "on": ("light", 950),
+      "off": ("light", 950),
+      "disabled": ("light", 950)
     ),
   ),
 );

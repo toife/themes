@@ -1,7 +1,7 @@
 // Text layer: color only (no states, no background/border).
 $layer-text: (
-  "primary": (
-    "color": ("primary", 550),
+  "mode": (
+    "color": ("light", 950),
   ),
   "light": (
     "color": ("light", 700),
@@ -9,8 +9,8 @@ $layer-text: (
   "dark": (
     "color": ("dark", 700),
   ),
-  "danger": (
-    "color": ("danger", 550),
+  "primary": (
+    "color": ("primary", 550),
   ),
   "success": (
     "color": ("success", 550),
@@ -21,7 +21,7 @@ $layer-text: (
   "warning": (
     "color": ("warning", 550),
   ),
-  "mode": (
-    "color": ("light", 950),
+  "danger": (
+    "color": ("danger", 550),
   ),
 );

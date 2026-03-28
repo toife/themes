@@ -104,27 +104,6 @@ $layer-checkbox: (
     ),
   ),
 
-  "danger": (
-    "background-color": (
-      "checked": ("danger", 550),
-      "unchecked": ("light", 950),
-      "hover": ("light", 950),
-      "focus": ("light", 950),
-      "disabled": ("light", 400),
-    ),
-    "color": ("light", 950),
-    "border-color": (
-      "checked": ("danger", 550),
-      "unchecked": ("light", 700),
-      "hover": ("danger", 700),
-      "focus": ("danger", 700),
-      "disabled": ("light", 500),
-    ),
-    "box-shadow-color": (
-      "focus": ("danger", 500),
-    ),
-  ),
-
   "success": (
     "background-color": (
       "checked": ("success", 550),
@@ -143,6 +122,27 @@ $layer-checkbox: (
     ),
     "box-shadow-color": (
       "focus": ("success", 500),
+    ),
+  ),
+
+  "info": (
+    "background-color": (
+      "checked": ("info", 550),
+      "unchecked": ("light", 950),
+      "hover": ("light", 950),
+      "focus": ("light", 950),
+      "disabled": ("light", 400),
+    ),
+    "color": ("light", 950),
+    "border-color": (
+      "checked": ("info", 550),
+      "unchecked": ("light", 700),
+      "hover": ("info", 700),
+      "focus": ("info", 700),
+      "disabled": ("light", 500),
+    ),
+    "box-shadow-color": (
+      "focus": ("info", 500),
     ),
   ),
 
@@ -167,9 +167,9 @@ $layer-checkbox: (
     ),
   ),
 
-  "info": (
+  "danger": (
     "background-color": (
-      "checked": ("info", 550),
+      "checked": ("danger", 550),
       "unchecked": ("light", 950),
       "hover": ("light", 950),
       "focus": ("light", 950),
@@ -177,14 +177,14 @@ $layer-checkbox: (
     ),
     "color": ("light", 950),
     "border-color": (
-      "checked": ("info", 550),
+      "checked": ("danger", 550),
       "unchecked": ("light", 700),
-      "hover": ("info", 700),
-      "focus": ("info", 700),
+      "hover": ("danger", 700),
+      "focus": ("danger", 700),
       "disabled": ("light", 500),
     ),
     "box-shadow-color": (
-      "focus": ("info", 500),
+      "focus": ("danger", 500),
     ),
   )
 );

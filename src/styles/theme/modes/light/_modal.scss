@@ -1,7 +1,7 @@
 // Matches vue modal.scss: modal-background-color only (no states).
 $layer-modal: (
-  "primary": (
-    "background-color": ("primary", 550),
+  "mode": (
+    "background-color": ("light", 950),
   ),
   "light": (
     "background-color": ("light", 700),
@@ -9,8 +9,8 @@ $layer-modal: (
   "dark": (
     "background-color": ("dark", 700),
   ),
-  "danger": (
-    "background-color": ("danger", 550),
+  "primary": (
+    "background-color": ("primary", 550),
   ),
   "success": (
     "background-color": ("success", 550),
@@ -21,7 +21,7 @@ $layer-modal: (
   "warning": (
     "background-color": ("warning", 550),
   ),
-  "mode": (
-    "background-color": ("light", 950),
+  "danger": (
+    "background-color": ("danger", 550),
   ),
 );

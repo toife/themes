@@ -1,7 +1,10 @@
 // Matches vue segmented-field.scss: segmented-field-color (message text; no states).
 $layer-segmented-field: (
-  "primary": (
-    "color": ("primary", 550),
+  "mode": (
+    "color": ("light", 950),
+  ),
+  "reverse": (
+    "color": ("dark", 650),
   ),
   "light": (
     "color": ("light", 700),
@@ -9,8 +12,8 @@ $layer-segmented-field: (
   "dark": (
     "color": ("dark", 700),
   ),
-  "danger": (
-    "color": ("danger", 550),
+  "primary": (
+    "color": ("primary", 550),
   ),
   "success": (
     "color": ("success", 550),
@@ -21,10 +24,7 @@ $layer-segmented-field: (
   "warning": (
     "color": ("warning", 550),
   ),
-  "reverse": (
-    "color": ("dark", 650),
-  ),
-  "mode": (
-    "color": ("light", 950),
+  "danger": (
+    "color": ("danger", 550),
   ),
 );

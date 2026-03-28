@@ -20,10 +20,6 @@ $layer-collapse: (
     "background-color": ("primary", 550),
     "color": ("light", 900),
   ),
-  "danger": (
-    "background-color": ("danger", 550),
-    "color": ("light", 900),
-  ),
   "success": (
     "background-color": ("success", 550),
     "color": ("light", 900),
@@ -35,5 +31,9 @@ $layer-collapse: (
   "warning": (
     "background-color": ("warning", 550),
     "color": ("dark", 900),
+  ),
+  "danger": (
+    "background-color": ("danger", 550),
+    "color": ("light", 900),
   ),
 );

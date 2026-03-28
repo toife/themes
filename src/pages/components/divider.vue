@@ -17,10 +17,16 @@
           </t-radio-group>
         </div>
         <t-divider class="my-4" />
-        <t-card :role="role">
-          <t-card-header>{{ role }}</t-card-header>
-          <t-card-body>content in card body</t-card-body>
-        </t-card>
+        <p>Above</p>
+        <t-divider :role="role" class="my-3" />
+        <p>Below</p>
+        <t-divider class="my-4" />
+        <p>Vertical</p>
+        <div class="divider-vertical-row">
+          <span>Left</span>
+          <t-divider orientation="vertical" :role="role" />
+          <span>Right</span>
+        </div>
       </t-card-body>
     </t-card>
   </t-page>
@@ -31,3 +37,12 @@ import { ref } from "vue";
 
 const role = ref("mode");
 </script>
+
+<style scoped>
+.divider-vertical-row {
+  display: flex;
+  align-items: stretch;
+  min-height: 4rem;
+  gap: 0;
+}
+</style>

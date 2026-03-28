@@ -17,10 +17,19 @@
           </t-radio-group>
         </div>
         <t-divider class="my-4" />
-        <t-card :role="role">
-          <t-card-header>{{ role }}</t-card-header>
-          <t-card-body>content in card body</t-card-body>
-        </t-card>
+        <p class="section-label">Horizontal</p>
+        <t-form-group orientation="horizontal">
+          <label class="form-label">Name</label>
+          <t-field v-model="name" :role="role" placeholder="Your name" />
+        </t-form-group>
+        <t-divider class="my-4" />
+        <p class="section-label">Vertical</p>
+        <div class="form-vertical">
+          <t-form-group orientation="vertical">
+            <label class="form-label-vertical">Email</label>
+            <t-field v-model="email" :role="role" type="email" placeholder="you@example.com" />
+          </t-form-group>
+        </div>
       </t-card-body>
     </t-card>
   </t-page>
@@ -30,4 +39,24 @@
 import { ref } from "vue";
 
 const role = ref("mode");
+const name = ref("");
+const email = ref("");
 </script>
+
+<style scoped>
+.section-label {
+  margin: 0 0 0.5rem;
+  font-size: 0.875rem;
+  opacity: 0.85;
+}
+
+.form-label {
+  min-width: 5rem;
+  align-self: center;
+}
+
+.form-vertical .form-label-vertical {
+  display: block;
+  margin-bottom: 0.35rem;
+}
+</style>

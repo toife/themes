@@ -17,10 +17,13 @@
           </t-radio-group>
         </div>
         <t-divider class="my-4" />
-        <t-card :role="role">
-          <t-card-header>{{ role }}</t-card-header>
-          <t-card-body>content in card body</t-card-body>
-        </t-card>
+        <p class="mb-3">
+          Visual hint used inside modals/sheets (see <code>t-modal</code>). Shown here in a framed
+          preview.
+        </p>
+        <div class="gesture-preview" aria-hidden="true">
+          <t-gesture-indicator placement="bottom" :role="role" />
+        </div>
       </t-card-body>
     </t-card>
   </t-page>
@@ -31,3 +34,13 @@ import { ref } from "vue";
 
 const role = ref("mode");
 </script>
+
+<style scoped>
+.gesture-preview {
+  position: relative;
+  min-height: 120px;
+  border-radius: 12px;
+  background: rgba(0, 0, 0, 0.06);
+  overflow: hidden;
+}
+</style>

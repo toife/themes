@@ -1,9 +1,14 @@
 // Matches vue tabs.scss: tabs-background-color, tabs-color, tabs-border-color (no states).
 $layer-tabs: (
-  "primary": (
-    "background-color": ("primary", 550),
+  "mode": (
+    "background-color": ("dark", 700),
     "color": ("light", 900),
-    "border-color": ("primary", 550),
+    "border-color": ("dark", 700),
+  ),
+  "reverse": (
+    "background-color": ("light", 700),
+    "color": ("dark", 900),
+    "border-color": ("light", 700),
   ),
   "light": (
     "background-color": ("light", 700),
@@ -15,10 +20,10 @@ $layer-tabs: (
     "color": ("light", 900),
     "border-color": ("dark", 700),
   ),
-  "danger": (
-    "background-color": ("danger", 550),
+  "primary": (
+    "background-color": ("primary", 550),
     "color": ("light", 900),
-    "border-color": ("danger", 550),
+    "border-color": ("primary", 550),
   ),
   "success": (
     "background-color": ("success", 550),
@@ -35,14 +40,9 @@ $layer-tabs: (
     "color": ("dark", 900),
     "border-color": ("warning", 550),
   ),
-  "reverse": (
-    "background-color": ("dark", 650),
+  "danger": (
+    "background-color": ("danger", 550),
     "color": ("light", 900),
-    "border-color": ("dark", 650),
-  ),
-  "mode": (
-    "background-color": ("light", 950),
-    "color": ("dark", 900),
-    "border-color": ("light", 750),
+    "border-color": ("danger", 550),
   ),
 );

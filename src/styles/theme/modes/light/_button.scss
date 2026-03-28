@@ -105,26 +105,6 @@ $layer-button: (
     ),
   ),
 
-  "danger": (
-    "background-color": (
-      "": ("danger", 550),
-      "hover": ("danger", 650),
-      "focus": ("danger", 750),
-      "active": ("danger", 750),
-      "disabled": ("danger", 250),
-    ),
-    "color": ("light", 900),
-    "border-color": (
-      "": ("danger", 550),
-      "hover": ("danger", 650),
-      "focus": ("danger", 750),
-      "active": ("danger", 750),
-      "disabled": ("danger", 250),
-    ),
-    "box-shadow-color": (
-      "focus": ("danger", 900),
-    ),
-  ),
   "success": (
     "background-color": (
       "": ("success", 550),
@@ -183,6 +163,27 @@ $layer-button: (
     ),
     "box-shadow-color": (
       "focus": ("warning", 900),
+    ),
+  ),
+
+  "danger": (
+    "background-color": (
+      "": ("danger", 550),
+      "hover": ("danger", 650),
+      "focus": ("danger", 750),
+      "active": ("danger", 750),
+      "disabled": ("danger", 250),
+    ),
+    "color": ("light", 900),
+    "border-color": (
+      "": ("danger", 550),
+      "hover": ("danger", 650),
+      "focus": ("danger", 750),
+      "active": ("danger", 750),
+      "disabled": ("danger", 250),
+    ),
+    "box-shadow-color": (
+      "focus": ("danger", 900),
     ),
   )
 );

@@ -1,9 +1,9 @@
 <template>
   <t-page class="p-4">
-    <t-card>
-      <t-card-header>Action</t-card-header>
+    <t-card role="mode">
+      <t-card-header>Example</t-card-header>
       <t-card-body>
-        <t-button @click="onOk">Open Action</t-button>
+        <t-button role="mode" @click="onOk">Open Action</t-button>
       </t-card-body>
     </t-card>
   </t-page>
@@ -19,12 +19,12 @@ const onOk = () => {
     actions: [
       [
         { text: "OK", handler: () => {} },
-        { text: "OK", handler: () => {} }
+        { text: "OK", handler: () => {} },
       ],
       [{ text: "Cancel", handler: () => {} }],
     ],
     onClose: () => {},
-    onChoose: (btn) => {},
+    onChoose: () => {},
   });
 };
 </script>

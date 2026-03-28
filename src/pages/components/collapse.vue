@@ -17,10 +17,20 @@
           </t-radio-group>
         </div>
         <t-divider class="my-4" />
-        <t-card :role="role">
-          <t-card-header>{{ role }}</t-card-header>
-          <t-card-body>content in card body</t-card-body>
-        </t-card>
+        <div class="collapse-stack">
+          <t-collapse v-model="open" :role="role">
+            <template #trigger>
+              <t-button variant="text" :role="role">Toggle panel</t-button>
+            </template>
+            <p>Content inside the collapse panel.</p>
+          </t-collapse>
+          <t-collapse v-model="openPrimary" :role="role">
+            <template #trigger>
+              <t-button variant="text" :role="role">Section (open by default)</t-button>
+            </template>
+            <p>More details here.</p>
+          </t-collapse>
+        </div>
       </t-card-body>
     </t-card>
   </t-page>
@@ -30,4 +40,14 @@
 import { ref } from "vue";
 
 const role = ref("mode");
+const open = ref(false);
+const openPrimary = ref(true);
 </script>
+
+<style scoped>
+.collapse-stack {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+</style>

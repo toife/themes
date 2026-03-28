@@ -25,11 +25,6 @@ $layer-card: (
     "color": ("light", 900),
     "border-color": ("primary", 800),
   ),
-  "danger": (
-    "background-color": ("danger", 550),
-    "color": ("light", 900),
-    "border-color": ("danger", 800),
-  ),
   "success": (
     "background-color": ("success", 550),
     "color": ("light", 900),
@@ -44,5 +39,10 @@ $layer-card: (
     "background-color": ("warning", 550),
     "color": ("dark", 900),
     "border-color": ("warning", 800),
+  ),
+  "danger": (
+    "background-color": ("danger", 550),
+    "color": ("light", 900),
+    "border-color": ("danger", 800),
   ),
 );

@@ -17,10 +17,17 @@
           </t-radio-group>
         </div>
         <t-divider class="my-4" />
-        <t-card :role="role">
-          <t-card-header>{{ role }}</t-card-header>
-          <t-card-body>content in card body</t-card-body>
-        </t-card>
+        <p class="section-label">OTP-style (6 cells)</p>
+        <t-segmented-field
+          v-model="code"
+          :role="role"
+          :length="6"
+          help="Enter the code from your device."
+        />
+        <p class="mt-2 muted">Model: {{ code.join("") || "—" }}</p>
+        <t-divider class="my-4" />
+        <p class="section-label">Shorter (4 cells) · readonly</p>
+        <t-segmented-field v-model="pin" :role="role" :length="4" readonly />
       </t-card-body>
     </t-card>
   </t-page>
@@ -30,4 +37,19 @@
 import { ref } from "vue";
 
 const role = ref("mode");
+const code = ref<string[]>([]);
+const pin = ref<string[]>(["1", "2", "3", "4"]);
 </script>
+
+<style scoped>
+.section-label {
+  margin: 0 0 0.5rem;
+  font-size: 0.875rem;
+  opacity: 0.85;
+}
+
+.muted {
+  opacity: 0.75;
+  font-size: 0.875rem;
+}
+</style>

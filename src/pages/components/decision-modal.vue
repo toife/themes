@@ -17,17 +17,50 @@
           </t-radio-group>
         </div>
         <t-divider class="my-4" />
-        <t-card :role="role">
-          <t-card-header>{{ role }}</t-card-header>
-          <t-card-body>content in card body</t-card-body>
-        </t-card>
+        <t-button role="danger" @click="visible = true">Delete item</t-button>
+
+        <t-decision-modal
+          :visible="visible"
+          title="Confirm"
+          message="This action cannot be undone. Continue?"
+          :role="role"
+          :actions="actions"
+          :dismiss="['backdrop', 'escape']"
+          @close="onClose"
+          @choose="onChoose"
+        />
       </t-card-body>
     </t-card>
   </t-page>
 </template>
 
 <script setup lang="ts">
-import { ref } from "vue";
+import { computed, ref } from "vue";
+import type { DecisionModalButton } from "@toife/vue";
 
 const role = ref("mode");
+const visible = ref(false);
+
+const actions = computed<DecisionModalButton[]>(() => [
+  {
+    text: "Cancel",
+    variant: "text",
+    role: role.value,
+    handler: () => {},
+  },
+  {
+    text: "Delete",
+    variant: "fill",
+    role: "danger",
+    handler: () => {},
+  },
+]);
+
+const onClose = () => {
+  visible.value = false;
+};
+
+const onChoose = () => {
+  visible.value = false;
+};
 </script>

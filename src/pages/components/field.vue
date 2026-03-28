@@ -17,10 +17,19 @@
           </t-radio-group>
         </div>
         <t-divider class="my-4" />
-        <t-card :role="role">
-          <t-card-header>{{ role }}</t-card-header>
-          <t-card-body>content in card body</t-card-body>
-        </t-card>
+        <div class="field-examples">
+          <t-field v-model="text" :role="role" placeholder="Outline field" />
+          <t-field v-model="text" :role="role" placeholder="Disabled" disabled />
+          <t-field v-model="text" :role="role" placeholder="Readonly" readonly />
+          <t-field v-model="email" :role="role" type="email" placeholder="Email" />
+          <t-field
+            v-model="pwd"
+            :role="role"
+            type="password"
+            placeholder="Password"
+            help="Use a strong password."
+          />
+        </div>
       </t-card-body>
     </t-card>
   </t-page>
@@ -30,4 +39,15 @@
 import { ref } from "vue";
 
 const role = ref("mode");
+const text = ref("");
+const email = ref("");
+const pwd = ref("");
 </script>
+
+<style scoped>
+.field-examples {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+</style>

@@ -19,10 +19,6 @@ $layer-avatar: (
     "background-color": ("primary", 550),
     "border-color": ("primary", 550)
   ),
-  "danger": (
-    "background-color": ("danger", 550),
-    "border-color": ("danger", 550)
-  ),
   "success": (
     "background-color": ("success", 550),
     "border-color": ("success", 550)
@@ -34,5 +30,9 @@ $layer-avatar: (
   "warning": (
     "background-color": ("warning", 550),
     "border-color": ("warning", 550)
+  ),
+  "danger": (
+    "background-color": ("danger", 550),
+    "border-color": ("danger", 550)
   ),
 );

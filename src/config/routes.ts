@@ -15,27 +15,21 @@ export default [
       },
 
       {
-        path: "/components/switch",
-        name: "components-switch",
-        component: () => import("../pages/components/switch.vue"),
-      },
-
-      {
         path: "/components/action",
         name: "components-action",
         component: () => import("../pages/components/action.vue"),
       },
 
       {
-        path: "/components/button",
-        name: "components-button",
-        component: () => import("../pages/components/button.vue"),
-      },
-
-      {
         path: "/components/avatar",
         name: "components-avatar",
         component: () => import("../pages/components/avatar.vue"),
+      },
+
+      {
+        path: "/components/button",
+        name: "components-button",
+        component: () => import("../pages/components/button.vue"),
       },
 
       {
@@ -51,9 +45,105 @@ export default [
       },
 
       {
+        path: "/components/collapse",
+        name: "components-collapse",
+        component: () => import("../pages/components/collapse.vue"),
+      },
+
+      {
+        path: "/components/container",
+        name: "components-container",
+        component: () => import("../pages/components/container.vue"),
+      },
+
+      {
+        path: "/components/decision-modal",
+        name: "components-decision-modal",
+        component: () => import("../pages/components/decision-modal.vue"),
+      },
+
+      {
+        path: "/components/divider",
+        name: "components-divider",
+        component: () => import("../pages/components/divider.vue"),
+      },
+
+      {
+        path: "/components/field",
+        name: "components-field",
+        component: () => import("../pages/components/field.vue"),
+      },
+
+      {
+        path: "/components/form-group",
+        name: "components-form-group",
+        component: () => import("../pages/components/form-group.vue"),
+      },
+
+      {
+        path: "/components/gesture-indicator",
+        name: "components-gesture-indicator",
+        component: () => import("../pages/components/gesture-indicator.vue"),
+      },
+
+      {
+        path: "/components/image",
+        name: "components-image",
+        component: () => import("../pages/components/image.vue"),
+      },
+
+      {
+        path: "/components/modal",
+        name: "components-modal",
+        component: () => import("../pages/components/modal.vue"),
+      },
+
+      {
         path: "/components/radio",
         name: "components-radio",
         component: () => import("../pages/components/radio.vue"),
+      },
+
+      {
+        path: "/components/refresher",
+        name: "components-refresher",
+        component: () => import("../pages/components/refresher.vue"),
+      },
+
+      {
+        path: "/components/segmented-field",
+        name: "components-segmented-field",
+        component: () => import("../pages/components/segmented-field.vue"),
+      },
+
+      {
+        path: "/components/skeleton",
+        name: "components-skeleton",
+        component: () => import("../pages/components/skeleton.vue"),
+      },
+
+      {
+        path: "/components/switch",
+        name: "components-switch",
+        component: () => import("../pages/components/switch.vue"),
+      },
+
+      {
+        path: "/components/tabs",
+        name: "components-tabs",
+        component: () => import("../pages/components/tabs.vue"),
+      },
+
+      {
+        path: "/components/toast",
+        name: "components-toast",
+        component: () => import("../pages/components/toast.vue"),
+      },
+
+      {
+        path: "/components/toolbar",
+        name: "components-toolbar",
+        component: () => import("../pages/components/toolbar.vue"),
       },
     ],
   },

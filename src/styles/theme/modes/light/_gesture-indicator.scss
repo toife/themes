@@ -1,7 +1,10 @@
 // Matches vue gesture-indicator.scss: gesture-indicator-border-color (used as bar fill; no states).
 $layer-gesture-indicator: (
-  "primary": (
-    "border-color": ("primary", 550),
+  "mode": (
+    "border-color": ("light", 750),
+  ),
+  "reverse": (
+    "border-color": ("dark", 750),
   ),
   "light": (
     "border-color": ("light", 700),
@@ -9,8 +12,8 @@ $layer-gesture-indicator: (
   "dark": (
     "border-color": ("dark", 700),
   ),
-  "danger": (
-    "border-color": ("danger", 550),
+  "primary": (
+    "border-color": ("primary", 550),
   ),
   "success": (
     "border-color": ("success", 550),
@@ -21,7 +24,7 @@ $layer-gesture-indicator: (
   "warning": (
     "border-color": ("warning", 550),
   ),
-  "mode": (
-    "border-color": ("light", 750),
+  "danger": (
+    "border-color": ("danger", 550),
   ),
 );

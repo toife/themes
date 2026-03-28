@@ -1,65 +1,27 @@
 <template>
   <t-page class="p-4">
-    <t-card>
-      <t-card-header>Mode</t-card-header>
+    <t-card role="mode">
+      <t-card-header>Example</t-card-header>
       <t-card-body>
-        <t-switch v-model="on" role="mode"/>
-        <t-switch v-model="on" role="mode" disabled />
-        <t-switch v-model="on" role="mode" readonly />
-      </t-card-body>
-    </t-card>
-
-    <t-card class="mt-4">
-      <t-card-header>Reverse</t-card-header>
-      <t-card-body>
-        <t-switch v-model="on" role="reverse"/>
-        <t-switch v-model="on" role="reverse" disabled />
-        <t-switch v-model="on" role="reverse" readonly />
-      </t-card-body>
-    </t-card>
-
-    <t-card class="mt-4">
-      <t-card-header>Warning</t-card-header>
-      <t-card-body>
-        <t-switch v-model="on" role="warning"/>
-        <t-switch v-model="on" role="warning" disabled />
-        <t-switch v-model="on" role="warning" readonly />
-      </t-card-body>
-    </t-card>
-
-    <t-card class="mt-4">
-      <t-card-header>Success</t-card-header>
-      <t-card-body>
-        <t-switch v-model="on" role="success"/>
-        <t-switch v-model="on" role="success" disabled />
-        <t-switch v-model="on" role="success" readonly />
-      </t-card-body>
-    </t-card>
-
-    <t-card class="mt-4">
-      <t-card-header>Info</t-card-header>
-      <t-card-body>
-        <t-switch v-model="on" role="info"/>
-        <t-switch v-model="on" role="info" disabled />
-        <t-switch v-model="on" role="info" readonly />
-      </t-card-body>
-    </t-card>
-
-    <t-card class="mt-4">
-      <t-card-header>Danger</t-card-header>
-      <t-card-body>
-        <t-switch v-model="on" role="danger"/>
-        <t-switch v-model="on" role="danger" disabled />
-        <t-switch v-model="on" role="danger" readonly />
-      </t-card-body>
-    </t-card>
-
-    <t-card class="mt-4">
-      <t-card-header>Primary</t-card-header>
-      <t-card-body>
-        <t-switch v-model="on" role="primary"/>
-        <t-switch v-model="on" role="primary" disabled />
-        <t-switch v-model="on" role="primary" readonly />
+        <div>
+          <t-radio-group v-model="role" orientation="horizontal">
+            <t-radio value="mode" role="mode">Mode</t-radio>
+            <t-radio value="reverse" role="reverse">Reverse</t-radio>
+            <t-radio value="light" role="light">Light</t-radio>
+            <t-radio value="dark" role="dark">Dark</t-radio>
+            <t-radio value="primary" role="primary">Primary</t-radio>
+            <t-radio value="success" role="success">Success</t-radio>
+            <t-radio value="info" role="info">Info</t-radio>
+            <t-radio value="warning" role="warning">Warning</t-radio>
+            <t-radio value="danger" role="danger">Danger</t-radio>
+          </t-radio-group>
+        </div>
+        <t-divider class="my-4" />
+        <div class="example-stack">
+          <t-switch v-model="on" :role="role" />
+          <t-switch v-model="on" :role="role" disabled />
+          <t-switch v-model="on" :role="role" readonly />
+        </div>
       </t-card-body>
     </t-card>
   </t-page>
@@ -67,5 +29,16 @@
 
 <script setup lang="ts">
 import { ref } from "vue";
+
+const role = ref("mode");
 const on = ref(false);
 </script>
+
+<style scoped>
+.example-stack {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  align-items: center;
+}
+</style>

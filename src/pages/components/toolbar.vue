@@ -17,10 +17,17 @@
           </t-radio-group>
         </div>
         <t-divider class="my-4" />
-        <t-card :role="role">
-          <t-card-header>{{ role }}</t-card-header>
-          <t-card-body>content in card body</t-card-body>
-        </t-card>
+        <p class="mb-3">
+          Toolbar reads <code>placement</code> from <code>t-cable</code> when not set explicitly.
+        </p>
+        <div class="toolbar-demo-shell">
+          <t-cable placement="bottom">
+            <t-toolbar :role="role" size="52px">
+              <t-button variant="text" :role="role">Left</t-button>
+              <t-button variant="text" :role="role">Right</t-button>
+            </t-toolbar>
+          </t-cable>
+        </div>
       </t-card-body>
     </t-card>
   </t-page>
@@ -31,3 +38,13 @@ import { ref } from "vue";
 
 const role = ref("mode");
 </script>
+
+<style scoped>
+.toolbar-demo-shell {
+  position: relative;
+  min-height: 140px;
+  border: 1px dashed rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+  overflow: hidden;
+}
+</style>

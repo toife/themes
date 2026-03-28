@@ -1,83 +1,27 @@
 <template>
   <t-page class="p-4">
-    <t-card>
-      <t-card-header>Mode</t-card-header>
+    <t-card role="mode">
+      <t-card-header>Example</t-card-header>
       <t-card-body>
-        <t-checkbox v-model="on" role="mode" disabled />
-        <t-checkbox v-model="on" role="mode" variant="outline" />
-        <t-checkbox v-model="on" role="mode" variant="fill" />
-      </t-card-body>
-    </t-card>
-
-    <t-card class="mt-4">
-      <t-card-header>Reverse</t-card-header>
-      <t-card-body>
-        <t-checkbox v-model="on" role="reverse" disabled />
-        <t-checkbox v-model="on" role="reverse" variant="outline" />
-        <t-checkbox v-model="on" role="reverse" variant="fill" />
-      </t-card-body>
-    </t-card>
-
-    <t-card class="mt-4">
-      <t-card-header>Light</t-card-header>
-      <t-card-body>
-        <t-checkbox v-model="on" role="light" disabled />
-        <t-checkbox v-model="on" role="light" variant="outline" />
-        <t-checkbox v-model="on" role="light" variant="fill" />
-      </t-card-body>
-    </t-card>
-
-    <t-card class="mt-4">
-      <t-card-header>Dark</t-card-header>
-      <t-card-body>
-        <t-checkbox v-model="on" role="dark" disabled />
-        <t-checkbox v-model="on" role="dark" variant="outline" />
-        <t-checkbox v-model="on" role="dark" variant="fill" />
-      </t-card-body>
-    </t-card>
-
-    <t-card class="mt-4">
-      <t-card-header>Primary</t-card-header>
-      <t-card-body>
-        <t-checkbox v-model="on" role="primary" disabled />
-        <t-checkbox v-model="on" role="primary" variant="outline" />
-        <t-checkbox v-model="on" role="primary" variant="fill" />
-      </t-card-body>
-    </t-card>  
-
-    <t-card class="mt-4">
-      <t-card-header>Danger</t-card-header>
-      <t-card-body>
-        <t-checkbox v-model="on" role="danger" disabled />        
-        <t-checkbox v-model="on" role="danger" variant="outline" />
-        <t-checkbox v-model="on" role="danger" variant="fill" />
-      </t-card-body>
-    </t-card>
-
-    <t-card class="mt-4">
-      <t-card-header>Info</t-card-header>
-      <t-card-body>
-        <t-checkbox v-model="on" role="info" disabled />        
-        <t-checkbox v-model="on" role="info" variant="outline" />
-        <t-checkbox v-model="on" role="info" variant="fill" />
-      </t-card-body>
-    </t-card>
-
-    <t-card class="mt-4">
-      <t-card-header>Warning</t-card-header>
-      <t-card-body>
-        <t-checkbox v-model="on" role="warning" disabled />
-        <t-checkbox v-model="on" role="warning" variant="outline" />
-        <t-checkbox v-model="on" role="warning" variant="fill" />
-      </t-card-body>
-    </t-card>
-
-    <t-card class="mt-4">
-      <t-card-header>Success</t-card-header>
-      <t-card-body>
-        <t-checkbox v-model="on" role="success" disabled />
-        <t-checkbox v-model="on" role="success" variant="outline" />
-        <t-checkbox v-model="on" role="success" variant="fill" />
+        <div>
+          <t-radio-group v-model="role" orientation="horizontal">
+            <t-radio value="mode" role="mode">Mode</t-radio>
+            <t-radio value="reverse" role="reverse">Reverse</t-radio>
+            <t-radio value="light" role="light">Light</t-radio>
+            <t-radio value="dark" role="dark">Dark</t-radio>
+            <t-radio value="primary" role="primary">Primary</t-radio>
+            <t-radio value="success" role="success">Success</t-radio>
+            <t-radio value="info" role="info">Info</t-radio>
+            <t-radio value="warning" role="warning">Warning</t-radio>
+            <t-radio value="danger" role="danger">Danger</t-radio>
+          </t-radio-group>
+        </div>
+        <t-divider class="my-4" />
+        <div class="example-stack">
+          <t-checkbox v-model="on" :role="role" disabled>Disabled</t-checkbox>
+          <t-checkbox v-model="on" :role="role" variant="outline">Outline</t-checkbox>
+          <t-checkbox v-model="on" :role="role" variant="fill">Fill</t-checkbox>
+        </div>
       </t-card-body>
     </t-card>
   </t-page>
@@ -85,5 +29,16 @@
 
 <script setup lang="ts">
 import { ref } from "vue";
+
+const role = ref("mode");
 const on = ref(false);
 </script>
+
+<style scoped>
+.example-stack {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  align-items: center;
+}
+</style>

@@ -17,17 +17,26 @@
           </t-radio-group>
         </div>
         <t-divider class="my-4" />
-        <t-card :role="role">
-          <t-card-header>{{ role }}</t-card-header>
-          <t-card-body>content in card body</t-card-body>
-        </t-card>
+        <div class="skel-stack">
+          <t-skeleton :role="role" width="60%" height="0.75rem" />
+          <t-skeleton :role="role" width="100%" height="3rem" />
+          <t-skeleton :role="role" width="40%" height="0.75rem" />
+        </div>
       </t-card-body>
     </t-card>
   </t-page>
 </template>
 
+<style scoped>
+.skel-stack {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+</style>
+
 <script setup lang="ts">
-import { ref } from "vue";
+import { ref } from 'vue';
 
 const role = ref("mode");
 </script>
