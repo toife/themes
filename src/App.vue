@@ -3,6 +3,7 @@
     <t-cable placement="top">
       <t-toolbar class="header-toolbar">
        <div class="header-toolbar-controls">
+          <t-switch v-model="isDarkMode">Dark Mode</t-switch>
           <t-switch v-model="isShadow">Shadow</t-switch>
           <t-radio-group v-model="direction" orientation="horizontal">
             <t-radio value="left">Left</t-radio>
@@ -30,7 +31,7 @@
 
 :deep(.header-toolbar) {
   padding: 0 1rem;
-  border-bottom: 1px solid red;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
 }
 
 .header-toolbar-controls{
@@ -41,10 +42,29 @@
 </style>
 
 <script setup lang="ts">
-import { computed, ref } from "vue";
+import { computed, onMounted, ref, watch } from "vue";
 const shape = ref<"rounded" | "flat" | "pill">("rounded");
 const direction = ref<"left" | "right">("left");
-const isDarkMode = ref<boolean>(false);
+const isDarkMode = ref<boolean>(localStorage.getItem("t-mode") === "dark");
 const isShadow = ref<boolean>(false);
 const isDivider = ref<boolean>(false);
+
+const setMode = (isDark: boolean) => {
+  if (isDark) {
+    document.documentElement.classList.add("t-mode-dark");
+    document.documentElement.classList.remove("t-mode-light");
+  } else {
+    document.documentElement.classList.add("t-mode-light");
+    document.documentElement.classList.remove("t-mode-dark");
+  }
+};
+
+watch(isDarkMode, (newMode) => {
+  setMode(newMode);
+  localStorage.setItem("t-mode", newMode ? "dark" : "light");
+});
+
+onMounted(() => {
+  setMode(isDarkMode.value);
+});
 </script>

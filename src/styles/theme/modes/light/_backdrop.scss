@@ -1,6 +1,8 @@
+$default: (
+  "opacity": 0.4,
+  "background-color": ("dark", 400),
+);
+
 $layer-backdrop: (
-  "": (
-    "opacity": 0.4,
-    "background-color": ("dark", 400),
-  ),
+  "": $default,
 );

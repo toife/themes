@@ -1,27 +1,42 @@
-// Matches vue divider.scss: divider-border-color only (no states).
+$light: (
+  "border-color": ("light", 700),
+);
+
+$dark: (
+  "border-color": ("dark", 700),
+);
+
+$primary: (
+  "border-color": ("primary", 550),
+);
+
+$success: (
+  "border-color": ("success", 550),
+);
+
+$info: (
+  "border-color": ("info", 550),
+);
+
+$warning: (
+  "border-color": ("warning", 550),
+);
+
+$danger: (
+  "border-color": ("danger", 550),
+);
+
+$mode: $light;
+$reverse: $dark;
+
 $layer-divider: (
-  "mode": (
-    "border-color": ("light", 750),
-  ),
-  "light": (
-    "border-color": ("light", 700),
-  ),
-  "dark": (
-    "border-color": ("dark", 700),
-  ),
-  "primary": (
-    "border-color": ("primary", 550),
-  ),
-  "success": (
-    "border-color": ("success", 550),
-  ),
-  "info": (
-    "border-color": ("info", 550),
-  ),
-  "warning": (
-    "border-color": ("warning", 550),
-  ),
-  "danger": (
-    "border-color": ("danger", 550),
-  ),
+  "mode": $mode,
+  "reverse": $reverse,
+  "light": $light,
+  "dark": $dark,
+  "primary": $primary,
+  "success": $success,
+  "info": $info,
+  "warning": $warning,
+  "danger": $danger,
 );

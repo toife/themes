@@ -1,39 +1,49 @@
-// Matches field outline: field-background-color (message), field-border-color (no states).
+$light: (
+  "background-color": ("light", 700),
+  "border-color": ("light", 700),
+);
+
+$dark: (
+  "background-color": ("dark", 700),
+  "border-color": ("dark", 700),
+);
+
+$primary: (
+  "background-color": ("primary", 550),
+  "border-color": ("primary", 550),
+);
+
+$success: (
+  "background-color": ("success", 550),
+  "border-color": ("success", 550),
+);
+
+$info: (
+  "background-color": ("info", 550),
+  "border-color": ("info", 550),
+);
+
+$warning: (
+  "background-color": ("warning", 550),
+  "border-color": ("warning", 550),
+);
+
+$danger: (
+  "background-color": ("danger", 550),
+  "border-color": ("danger", 550),
+);
+
+$mode: $light;
+$reverse: $dark;
+
 $layer-field: (
-  "mode": (
-    "background-color": ("light", 900),
-    "border-color": ("light", 700),
-  ),
-  "reverse": (
-    "background-color": ("dark", 650),
-    "border-color": ("dark", 650),
-  ),
-  "light": (
-    "background-color": ("light", 700),
-    "border-color": ("light", 700),
-  ),
-  "dark": (
-    "background-color": ("dark", 700),
-    "border-color": ("dark", 700),
-  ),
-  "primary": (
-    "background-color": ("primary", 550),
-    "border-color": ("primary", 550),
-  ),
-  "success": (
-    "background-color": ("success", 550),
-    "border-color": ("success", 550),
-  ),
-  "info": (
-    "background-color": ("info", 550),
-    "border-color": ("info", 550),
-  ),
-  "warning": (
-    "background-color": ("warning", 550),
-    "border-color": ("warning", 550),
-  ),
-  "danger": (
-    "background-color": ("danger", 550),
-    "border-color": ("danger", 550),
-  ),
+  "mode": $mode,
+  "reverse": $reverse,
+  "light": $light,
+  "dark": $dark,
+  "primary": $primary,
+  "success": $success,
+  "info": $info,
+  "warning": $warning,
+  "danger": $danger,
 );

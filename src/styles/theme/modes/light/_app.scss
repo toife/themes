@@ -1,12 +1,14 @@
+$default: (
+  "background-color": (
+    "light",
+    900,
+  ),
+  "color": (
+    "dark",
+    850,
+  ),
+);
+
 $layer-app: (
-  "": (
-    "background-color": (
-      "light",
-      900,
-    ),
-    "color": (
-      "dark",
-      850,
-    ),
-  )
+  "": $default,
 );

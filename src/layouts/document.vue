@@ -149,12 +149,12 @@ const componentNavGroups: ComponentNavGroup[] = [
     icon: "form",
     items: [
       { to: "/components/field", label: "Field", tag: "t-field" },
-      { to: "/components/form-group", label: "Form group", tag: "t-form-group" },
+      { to: "/components/segmented-field", label: "Segmented field", tag: "t-segmented-field" },
       { to: "/components/checkbox", label: "Checkbox", tag: "t-checkbox" },
       { to: "/components/radio", label: "Radio", tag: "t-radio" },
       { to: "/components/switch", label: "Switch", tag: "t-switch" },
-      { to: "/components/segmented-field", label: "Segmented field", tag: "t-segmented-field" },
       { to: "/components/button", label: "Button", tag: "t-button" },
+      { to: "/components/form-group", label: "Form group", tag: "t-form-group" },
     ],
   },
   {

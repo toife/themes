@@ -1,155 +1,133 @@
-// Matches vue switch.scss: background-color (on, hover, off, disabled, contrast); border-color (focus ring); color.strong (optional token).
+$dark: (
+  "background-color": (
+    "focus": ("dark", 900),
+    "on": ("dark", 800),
+    "off": ("dark", 200),
+    "disabled": ("dark", 400),
+  ),
+  "box-shadow-color": (
+    "focus": ("dark", 300),
+  ),
+  "color": (
+    "on": ("light", 950),
+    "off": ("light", 950),
+    "disabled": ("light", 950),
+  ),
+);
+
+$light: (
+  "background-color": (
+    "focus": ("light", 900),
+    "on": ("light", 800),
+    "off": ("light", 800),
+    "disabled": ("light", 400),
+  ),
+  "box-shadow-color": (
+    "focus": ("dark", 900),
+  ),
+  "color": (
+    "on": ("dark", 900),
+    "off": ("dark", 900),
+    "disabled": ("dark", 900),
+  ),
+);
+
+$primary: (
+  "background-color": (
+    "focus": ("primary", 900),
+    "on": ("primary", 550),
+    "off": ("dark", 200),
+    "disabled": ("primary", 400),
+  ),
+  "box-shadow-color": (
+    "focus": ("primary", 550),
+  ),
+  "color": (
+    "on": ("light", 950),
+    "off": ("light", 950),
+    "disabled": ("light", 950),
+  ),
+);
+
+$success: (
+  "background-color": (
+    "focus": ("success", 900),
+    "on": ("success", 550),
+    "off": ("dark", 200),
+    "disabled": ("success", 400),
+  ),
+  "box-shadow-color": (
+    "focus": ("success", 550),
+  ),
+  "color": (
+    "on": ("light", 950),
+    "off": ("light", 950),
+    "disabled": ("light", 950),
+  ),
+);
+
+$info: (
+  "background-color": (
+    "focus": ("info", 900),
+    "on": ("info", 550),
+    "off": ("dark", 200),
+    "disabled": ("info", 400),
+  ),
+  "box-shadow-color": (
+    "focus": ("info", 550),
+  ),
+  "color": (
+    "on": ("light", 950),
+    "off": ("light", 950),
+    "disabled": ("light", 950),
+  ),
+);
+
+$warning: (
+  "background-color": (
+    "focus": ("warning", 900),
+    "on": ("warning", 550),
+    "off": ("dark", 200),
+    "disabled": ("warning", 400),
+  ),
+  "box-shadow-color": (
+    "focus": ("warning", 550),
+  ),
+  "color": (
+    "on": ("light", 950),
+    "off": ("light", 950),
+    "disabled": ("light", 950),
+  ),
+);
+
+$danger: (
+  "background-color": (
+    "focus": ("danger", 900),
+    "on": ("danger", 550),
+    "off": ("dark", 200),
+    "disabled": ("danger", 400),
+  ),
+  "box-shadow-color": (
+    "focus": ("danger", 550),
+  ),
+  "color": (
+    "on": ("light", 950),
+    "off": ("light", 950),
+    "disabled": ("light", 950),
+  ),
+);
+
+$mode: $dark;
+$reverse: $light;
+
 $layer-switch: (
-  "mode": (
-    "background-color": (
-      "focus": ("dark", 900),
-      "on": ("dark", 800),
-      "off": ("dark", 200),
-      "disabled": ("dark", 400)
-    ),
-    "box-shadow-color": (
-      "focus": ("dark", 300)
-    ),
-    "color": (
-      "on": ("light", 950),
-      "off": ("light", 950),
-      "disabled": ("light", 950)
-    ),
-  ),
-
-  "reverse": (
-    "background-color": (
-      "focus": ("light", 900),
-      "on": ("light", 800),
-      "off": ("light", 800),
-      "disabled": ("light", 400)
-    ),
-    "box-shadow-color": (
-      "focus": ("dark", 300)
-    ),
-    "color": (
-      "on": ("dark", 900),
-      "off": ("dark", 900),
-      "disabled": ("dark", 900)
-    ),
-  ),
-
-  "light": (
-    "background-color": (
-      "focus": ("light", 900),
-      "on": ("light", 800),
-      "off": ("light", 800),
-      "disabled": ("light", 400)
-    ),
-    "box-shadow-color": (
-      "focus": ("dark", 900)
-    ),
-    "color": (
-      "on": ("dark", 900),
-      "off": ("dark", 900),
-      "disabled": ("dark", 900)
-    ),
-  ),
-
-  "dark": (
-    "background-color": (
-      "focus": ("dark", 900),
-      "on": ("dark", 800),
-      "off": ("dark", 200),
-      "disabled": ("dark", 400)
-    ),
-    "box-shadow-color": (
-      "focus": ("dark", 300)
-    ),
-    "color": (
-      "on": ("light", 950),
-      "off": ("light", 950),
-      "disabled": ("light", 950)
-    ),
-  ),
-
-  "primary": (
-    "background-color": (
-      "focus": ("primary", 900),
-      "on": ("primary", 550),
-      "off": ("dark", 200),
-      "disabled": ("primary", 400)
-    ),
-    "box-shadow-color": (
-      "focus": ("primary", 550)
-    ),
-    "color": (
-      "on": ("light", 950),
-      "off": ("light", 950),
-      "disabled": ("light", 950)
-    ),
-  ),
-
-  "success": (
-    "background-color": (
-      "focus": ("success", 900),
-      "on": ("success", 550),
-      "off": ("dark", 200),
-      "disabled": ("success", 400)
-    ),
-    "box-shadow-color": (
-      "focus": ("success", 550)
-    ),
-    "color": (
-      "on": ("light", 950),
-      "off": ("light", 950),
-      "disabled": ("light", 950)
-    ),
-  ),
-
-  "info": (
-    "background-color": (
-      "focus": ("info", 900),
-      "on": ("info", 550),
-      "off": ("dark", 200),
-      "disabled": ("info", 400)
-    ),
-    "box-shadow-color": (
-      "focus": ("info", 550)
-    ),
-    "color": (
-      "on": ("light", 950),
-      "off": ("light", 950),
-      "disabled": ("light", 950)
-    ),
-  ),
-
-  "warning": (
-    "background-color": (
-      "focus": ("warning", 900),
-      "on": ("warning", 550),
-      "off": ("dark", 200),
-      "disabled": ("warning", 400)
-    ),
-    "box-shadow-color": (
-      "focus": ("warning", 550)
-    ),
-    "color": (
-      "on": ("light", 950),
-      "off": ("light", 950),
-      "disabled": ("light", 950)
-    ),
-  ),
-
-  "danger": (
-    "background-color": (
-      "focus": ("danger", 900),
-      "on": ("danger", 550),
-      "off": ("dark", 200),
-      "disabled": ("danger", 400)
-    ),
-    "box-shadow-color": (
-      "focus": ("danger", 550)
-    ),
-    "color": (
-      "on": ("light", 950),
-      "off": ("light", 950),
-      "disabled": ("light", 950)
-    ),
-  ),
+  "mode": $mode,
+  "reverse": $reverse,
+  "light": $light,
+  "dark": $dark,
+  "primary": $primary,
+  "success": $success,
+  "info": $info,
+  "warning": $warning,
+  "danger": $danger,
 );

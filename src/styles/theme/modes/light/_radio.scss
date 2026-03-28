@@ -1,190 +1,161 @@
+$dark: (
+  "background-color": (
+    "checked": ("dark", 800),
+    "unchecked": ("light", 950),
+    "hover": ("light", 950),
+    "focus": ("light", 950),
+    "disabled": ("light", 400),
+  ),
+  "color": ("light", 950),
+  "border-color": (
+    "checked": ("dark", 800),
+    "unchecked": ("light", 700),
+    "hover": ("dark", 700),
+    "focus": ("dark", 700),
+    "disabled": ("light", 500),
+  ),
+  "box-shadow-color": (
+    "focus": ("dark", 500),
+  ),
+);
+
+$light: (
+  "background-color": (
+    "checked": ("light", 800),
+    "unchecked": ("dark", 950),
+    "hover": ("dark", 950),
+    "focus": ("dark", 950),
+    "disabled": ("dark", 400),
+  ),
+  "color": ("dark", 950),
+  "border-color": (
+    "checked": ("light", 800),
+    "unchecked": ("light", 700),
+    "hover": ("dark", 700),
+    "focus": ("dark", 700),
+    "disabled": ("dark", 500),
+  ),
+  "box-shadow-color": (
+    "focus": ("light", 500),
+  ),
+);
+
+$primary: (
+  "background-color": (
+    "checked": ("primary", 550),
+    "unchecked": ("light", 950),
+    "hover": ("light", 950),
+    "focus": ("light", 950),
+    "disabled": ("light", 400),
+  ),
+  "color": ("light", 950),
+  "border-color": (
+    "checked": ("primary", 550),
+    "unchecked": ("light", 700),
+    "hover": ("primary", 700),
+    "focus": ("primary", 700),
+    "disabled": ("light", 500),
+  ),
+  "box-shadow-color": (
+    "focus": ("primary", 500),
+  ),
+);
+
+$success: (
+  "background-color": (
+    "checked": ("success", 550),
+    "unchecked": ("light", 950),
+    "hover": ("light", 950),
+    "focus": ("light", 950),
+    "disabled": ("light", 400),
+  ),
+  "color": ("light", 950),
+  "border-color": (
+    "checked": ("success", 550),
+    "unchecked": ("light", 700),
+    "hover": ("success", 700),
+    "focus": ("success", 700),
+    "disabled": ("light", 500),
+  ),
+  "box-shadow-color": (
+    "focus": ("success", 500),
+  ),
+);
+
+$info: (
+  "background-color": (
+    "checked": ("info", 550),
+    "unchecked": ("light", 950),
+    "hover": ("light", 950),
+    "focus": ("light", 950),
+    "disabled": ("light", 400),
+  ),
+  "color": ("light", 950),
+  "border-color": (
+    "checked": ("info", 550),
+    "unchecked": ("light", 700),
+    "hover": ("info", 700),
+    "focus": ("info", 700),
+    "disabled": ("light", 500),
+  ),
+  "box-shadow-color": (
+    "focus": ("info", 500),
+  ),
+);
+
+$warning: (
+  "background-color": (
+    "checked": ("warning", 550),
+    "unchecked": ("light", 950),
+    "hover": ("light", 950),
+    "focus": ("light", 950),
+    "disabled": ("light", 400),
+  ),
+  "color": ("light", 950),
+  "border-color": (
+    "checked": ("warning", 550),
+    "unchecked": ("light", 700),
+    "hover": ("warning", 700),
+    "focus": ("warning", 700),
+    "disabled": ("light", 500),
+  ),
+  "box-shadow-color": (
+    "focus": ("warning", 500),
+  ),
+);
+
+$danger: (
+  "background-color": (
+    "checked": ("danger", 550),
+    "unchecked": ("light", 950),
+    "hover": ("light", 950),
+    "focus": ("light", 950),
+    "disabled": ("light", 400),
+  ),
+  "color": ("light", 950),
+  "border-color": (
+    "checked": ("danger", 550),
+    "unchecked": ("light", 700),
+    "hover": ("danger", 700),
+    "focus": ("danger", 700),
+    "disabled": ("light", 500),
+  ),
+  "box-shadow-color": (
+    "focus": ("danger", 500),
+  ),
+);
+
+$mode: $dark;
+$reverse: $light;
+
 $layer-radio: (
-  "mode": (
-    "background-color": (
-      "checked": ("dark", 800),
-      "unchecked": ("light", 950),
-      "hover": ("light", 950),
-      "focus": ("light", 950),
-      "disabled": ("light", 400),
-    ),
-    "color": ("light", 950),
-    "border-color": (
-      "checked": ("dark", 800),
-      "unchecked": ("light", 700),
-      "hover": ("dark", 700),
-      "focus": ("dark", 700),
-      "disabled": ("light", 500),
-    ),
-    "box-shadow-color": (
-      "focus": ("dark", 500),
-    ),
-  ),
-
-  "reverse": (
-    "background-color": (
-      "checked": ("light", 800),
-      "unchecked": ("dark", 950),
-      "hover": ("dark", 950),
-      "focus": ("dark", 950),
-      "disabled": ("dark", 400),
-    ),
-    "color": ("dark", 950),
-    "border-color": (
-      "checked": ("light", 800),
-      "unchecked": ("light", 700),
-      "hover": ("dark", 700),
-      "focus": ("dark", 700),
-      "disabled": ("dark", 500),
-    ),
-    "box-shadow-color": (
-      "focus": ("light", 500),
-    ),
-  ),
-
-  "light": (
-    "background-color": (
-      "checked": ("light", 800),
-      "unchecked": ("dark", 950),
-      "hover": ("dark", 950),
-      "focus": ("dark", 950),
-      "disabled": ("dark", 400),
-    ),
-    "color": ("dark", 950),
-    "border-color": (
-      "checked": ("light", 800),
-      "unchecked": ("light", 700),
-      "hover": ("dark", 700),
-      "focus": ("dark", 700),
-      "disabled": ("dark", 500),
-    ),
-    "box-shadow-color": (
-      "focus": ("light", 500),
-    ),
-  ),
-
-  "dark": (
-    "background-color": (
-      "checked": ("dark", 800),
-      "unchecked": ("light", 950),
-      "hover": ("light", 950),
-      "focus": ("light", 950),
-      "disabled": ("light", 400),
-    ),
-    "color": ("light", 950),
-    "border-color": (
-      "checked": ("dark", 800),
-      "unchecked": ("light", 700),
-      "hover": ("dark", 700),
-      "focus": ("dark", 700),
-      "disabled": ("light", 500),
-    ),
-    "box-shadow-color": (
-      "focus": ("dark", 500),
-    ),
-  ),
-
-  "primary": (
-    "background-color": (
-      "checked": ("primary", 550),
-      "unchecked": ("light", 950),
-      "hover": ("light", 950),
-      "focus": ("light", 950),
-      "disabled": ("light", 400),
-    ),
-    "color": ("light", 950),
-    "border-color": (
-      "checked": ("primary", 550),
-      "unchecked": ("light", 700),
-      "hover": ("primary", 700),
-      "focus": ("primary", 700),
-      "disabled": ("light", 500),
-    ),
-    "box-shadow-color": (
-      "focus": ("primary", 500),
-    ),
-  ),
-
-  "success": (
-    "background-color": (
-      "checked": ("success", 550),
-      "unchecked": ("light", 950),
-      "hover": ("light", 950),
-      "focus": ("light", 950),
-      "disabled": ("light", 400),
-    ),
-    "color": ("light", 950),
-    "border-color": (
-      "checked": ("success", 550),
-      "unchecked": ("light", 700),
-      "hover": ("success", 700),
-      "focus": ("success", 700),
-      "disabled": ("light", 500),
-    ),
-    "box-shadow-color": (
-      "focus": ("success", 500),
-    ),
-  ),
-
-  "info": (
-    "background-color": (
-      "checked": ("info", 550),
-      "unchecked": ("light", 950),
-      "hover": ("light", 950),
-      "focus": ("light", 950),
-      "disabled": ("light", 400),
-    ),
-    "color": ("light", 950),
-    "border-color": (
-      "checked": ("info", 550),
-      "unchecked": ("light", 700),
-      "hover": ("info", 700),
-      "focus": ("info", 700),
-      "disabled": ("light", 500),
-    ),
-    "box-shadow-color": (
-      "focus": ("info", 500),
-    ),
-  ),
-
-  "warning": (
-    "background-color": (
-      "checked": ("warning", 550),
-      "unchecked": ("light", 950),
-      "hover": ("light", 950),
-      "focus": ("light", 950),
-      "disabled": ("light", 400),
-    ),
-    "color": ("light", 950),
-    "border-color": (
-      "checked": ("warning", 550),
-      "unchecked": ("light", 700),
-      "hover": ("warning", 700),
-      "focus": ("warning", 700),
-      "disabled": ("light", 500),
-    ),
-    "box-shadow-color": (
-      "focus": ("warning", 500),
-    ),
-  ),
-
-  "danger": (
-    "background-color": (
-      "checked": ("danger", 550),
-      "unchecked": ("light", 950),
-      "hover": ("light", 950),
-      "focus": ("light", 950),
-      "disabled": ("light", 400),
-    ),
-    "color": ("light", 950),
-    "border-color": (
-      "checked": ("danger", 550),
-      "unchecked": ("light", 700),
-      "hover": ("danger", 700),
-      "focus": ("danger", 700),
-      "disabled": ("light", 500),
-    ),
-    "box-shadow-color": (
-      "focus": ("danger", 500),
-    ),
-  )
+  "mode": $mode,
+  "reverse": $reverse,
+  "light": $light,
+  "dark": $dark,
+  "primary": $primary,
+  "success": $success,
+  "info": $info,
+  "warning": $warning,
+  "danger": $danger,
 );

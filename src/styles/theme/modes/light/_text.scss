@@ -1,27 +1,42 @@
-// Text layer: color only (no states, no background/border).
+$light: (
+  "color": ("light", 700),
+);
+
+$dark: (
+  "color": ("dark", 700),
+);
+
+$primary: (
+  "color": ("primary", 550),
+);
+
+$success: (
+  "color": ("success", 550),
+);
+
+$info: (
+  "color": ("info", 550),
+);
+
+$warning: (
+  "color": ("warning", 550),
+);
+
+$danger: (
+  "color": ("danger", 550),
+);
+
+$mode: $dark;
+$reverse: $light;
+
 $layer-text: (
-  "mode": (
-    "color": ("light", 950),
-  ),
-  "light": (
-    "color": ("light", 700),
-  ),
-  "dark": (
-    "color": ("dark", 700),
-  ),
-  "primary": (
-    "color": ("primary", 550),
-  ),
-  "success": (
-    "color": ("success", 550),
-  ),
-  "info": (
-    "color": ("info", 550),
-  ),
-  "warning": (
-    "color": ("warning", 550),
-  ),
-  "danger": (
-    "color": ("danger", 550),
-  ),
+  "mode": $mode,
+  "reverse": $reverse,
+  "light": $light,
+  "dark": $dark,
+  "primary": $primary,
+  "success": $success,
+  "info": $info,
+  "warning": $warning,
+  "danger": $danger,
 );

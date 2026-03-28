@@ -1,39 +1,49 @@
-// Matches vue collapse.scss: collapse-background-color, collapse-color (no states).
+$light: (
+  "background-color": ("light", 700),
+  "color": ("dark", 900),
+);
+
+$dark: (
+  "background-color": ("dark", 700),
+  "color": ("light", 900),
+);
+
+$primary: (
+  "background-color": ("primary", 550),
+  "color": ("light", 900),
+);
+
+$success: (
+  "background-color": ("success", 550),
+  "color": ("light", 900),
+);
+
+$info: (
+  "background-color": ("info", 550),
+  "color": ("light", 900),
+);
+
+$warning: (
+  "background-color": ("warning", 550),
+  "color": ("dark", 900),
+);
+
+$danger: (
+  "background-color": ("danger", 550),
+  "color": ("light", 900),
+);
+
+$mode: $light;
+$reverse: $dark;
+
 $layer-collapse: (
-  "mode": (
-    "background-color": ("light", 950),
-    "color": ("dark", 900),
-  ),
-  "reverse": (
-    "background-color": ("dark", 950),
-    "color": ("light", 900),
-  ),
-  "light": (
-    "background-color": ("light", 700),
-    "color": ("dark", 900),
-  ),
-  "dark": (
-    "background-color": ("dark", 700),
-    "color": ("light", 900),
-  ),
-  "primary": (
-    "background-color": ("primary", 550),
-    "color": ("light", 900),
-  ),
-  "success": (
-    "background-color": ("success", 550),
-    "color": ("light", 900),
-  ),
-  "info": (
-    "background-color": ("info", 550),
-    "color": ("light", 900),
-  ),
-  "warning": (
-    "background-color": ("warning", 550),
-    "color": ("dark", 900),
-  ),
-  "danger": (
-    "background-color": ("danger", 550),
-    "color": ("light", 900),
-  ),
+  "mode": $mode,
+  "reverse": $reverse,
+  "light": $light,
+  "dark": $dark,
+  "primary": $primary,
+  "success": $success,
+  "info": $info,
+  "warning": $warning,
+  "danger": $danger,
 );
