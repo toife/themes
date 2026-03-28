@@ -1113,9 +1113,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@toife/vue@file:../vue::locator=doc-page%40workspace%3A.":
+"@toife/vue@npm:^3.0.6":
   version: 3.0.6
-  resolution: "@toife/vue@file:../vue#../vue::hash=7420c4&locator=doc-page%40workspace%3A."
+  resolution: "@toife/vue@npm:3.0.6"
   dependencies:
     "@toife/gesture": "npm:^1.1.4"
   peerDependencies:
@@ -1123,7 +1123,7 @@ __metadata:
     "@toife/sass-layer-generator": ^1.0.9
     vue: ^3.5.0
     vue-router: ^4.0.0
-  checksum: 10c0/92ecb6936b55964a4b40ce6d74b61ccb29ea368be7236d09c5df6475e2bf94941febeb4b2c8b27eff2896d0643fe79bf519114dd818c210609e76b693cf702ad
+  checksum: 10c0/2fd2004c878aa7260003d4abc870bdb8fe3a0c311db2ad13446cc6e664e547adaddb1ca6dd70d44476d4658cac163079d4da7404d08ab5d24917c4f8df8c2e8a
   languageName: node
   linkType: hard
 
@@ -1672,7 +1672,7 @@ __metadata:
   dependencies:
     "@toife/gesture": "npm:^1.1.4"
     "@toife/sass-layer-generator": "npm:^1.0.9"
-    "@toife/vue": "file:../vue"
+    "@toife/vue": "npm:^3.0.6"
     "@types/node": "npm:^22.10.0"
     "@vitejs/plugin-vue": "npm:^6.0.1"
     sass: "npm:^1.90.0"
