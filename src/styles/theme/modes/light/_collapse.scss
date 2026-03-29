@@ -1,9 +1,9 @@
-$light: (
+$mode: (
   "background-color": ("light", 700),
   "color": ("dark", 900),
 );
 
-$dark: (
+$reverse: (
   "background-color": ("dark", 700),
   "color": ("light", 900),
 );
@@ -33,14 +33,9 @@ $danger: (
   "color": ("light", 900),
 );
 
-$mode: $light;
-$reverse: $dark;
-
 $layer-collapse: (
   "mode": $mode,
   "reverse": $reverse,
-  "light": $light,
-  "dark": $dark,
   "primary": $primary,
   "success": $success,
   "info": $info,

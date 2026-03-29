@@ -1,6 +1,6 @@
 // Matches vue button.scss: color; background-color / border-color with
 // default ("") + hover, focus, active, disabled only.
-$dark: (
+$mode: (
   "background-color": (
     "": ("dark", 700),
     "hover": ("dark", 800),
@@ -21,7 +21,7 @@ $dark: (
   ),
 );
 
-$light: (
+$reverse: (
   "background-color": (
     "": ("light", 950),
     "hover": ("light", 800),
@@ -147,14 +147,9 @@ $danger: (
   ),
 );
 
-$mode: $light;
-$reverse: $dark;
-
 $layer-button: (
   "mode": $mode,
   "reverse": $reverse,
-  "light": $light,
-  "dark": $dark,
   "primary": $primary,
   "success": $success,
   "info": $info,

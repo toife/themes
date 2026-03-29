@@ -1,4 +1,4 @@
-$dark: (
+$mode: (
   "background-color": (
     "focus": ("dark", 900),
     "on": ("dark", 800),
@@ -15,7 +15,7 @@ $dark: (
   ),
 );
 
-$light: (
+$reverse: (
   "background-color": (
     "focus": ("light", 900),
     "on": ("light", 800),
@@ -117,14 +117,9 @@ $danger: (
   ),
 );
 
-$mode: $dark;
-$reverse: $light;
-
 $layer-switch: (
   "mode": $mode,
   "reverse": $reverse,
-  "light": $light,
-  "dark": $dark,
   "primary": $primary,
   "success": $success,
   "info": $info,

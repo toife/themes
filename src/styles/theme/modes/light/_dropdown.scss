@@ -1,32 +1,39 @@
 $mode: (
+  "background-color": ("light", 700),
   "border-color": ("light", 700),
 );
 
 $reverse: (
+  "background-color": ("dark", 700),
   "border-color": ("dark", 700),
 );
 
 $primary: (
+  "background-color": ("primary", 550),
   "border-color": ("primary", 550),
 );
 
 $success: (
+  "background-color": ("success", 550),
   "border-color": ("success", 550),
 );
 
 $info: (
+  "background-color": ("info", 550),
   "border-color": ("info", 550),
 );
 
 $warning: (
+  "background-color": ("warning", 550),
   "border-color": ("warning", 550),
 );
 
 $danger: (
+  "background-color": ("danger", 550),
   "border-color": ("danger", 550),
 );
 
-$layer-gesture-indicator: (
+$layer-dropdown: (
   "mode": $mode,
   "reverse": $reverse,
   "primary": $primary,

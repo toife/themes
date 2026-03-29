@@ -1,9 +1,9 @@
-$light: (
-  "color": ("light", 700),
+$mode: (
+  "color": ("dark", 700),
 );
 
-$dark: (
-  "color": ("dark", 700),
+$reverse: (
+  "color": ("light", 700),
 );
 
 $primary: (
@@ -26,14 +26,9 @@ $danger: (
   "color": ("danger", 550),
 );
 
-$mode: $dark;
-$reverse: $light;
-
 $layer-text: (
   "mode": $mode,
   "reverse": $reverse,
-  "light": $light,
-  "dark": $dark,
   "primary": $primary,
   "success": $success,
   "info": $info,

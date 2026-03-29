@@ -14,7 +14,7 @@
   "dependencies": {
     "@toife/gesture": "^1.1.4",
     "@toife/sass-layer-generator": "^1.0.9",
-    "@toife/vue": "^3.0.6",
+    "@toife/vue": "file:../vue",
     "vue": "^3.5.30",
     "vue-router": "^4.5.0"
   },

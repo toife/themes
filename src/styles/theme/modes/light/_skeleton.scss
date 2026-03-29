@@ -1,9 +1,9 @@
 // Matches vue skeleton.scss: background-color (shimmer) + subtle (track); width/height from sizes, not layer colors.
-$light: (
+$mode: (
   "background-color": ("light", 700),
 );
 
-$dark: (
+$reverse: (
   "background-color": ("dark", 700),
 );
 
@@ -27,14 +27,9 @@ $danger: (
   "background-color": ("danger", 550),
 );
 
-$mode: $light;
-$reverse: $dark;
-
 $layer-skeleton: (
   "mode": $mode,
   "reverse": $reverse,
-  "light": $light,
-  "dark": $dark,
   "primary": $primary,
   "success": $success,
   "info": $info,

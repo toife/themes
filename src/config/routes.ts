@@ -81,6 +81,12 @@ export default [
       },
 
       {
+        path: "/components/dropdown",
+        name: "components-dropdown",
+        component: () => import("../pages/components/dropdown.vue"),
+      },
+
+      {
         path: "/components/field",
         name: "components-field",
         component: () => import("../pages/components/field.vue"),
@@ -144,6 +150,12 @@ export default [
         path: "/components/segmented-field",
         name: "components-segmented-field",
         component: () => import("../pages/components/segmented-field.vue"),
+      },
+
+      {
+        path: "/components/select",
+        name: "components-select",
+        component: () => import("../pages/components/select.vue"),
       },
 
       {

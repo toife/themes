@@ -1,4 +1,4 @@
-$dark: (
+$mode: (
   "background-color": (
     "checked": ("dark", 800),
     "unchecked": ("light", 950),
@@ -19,7 +19,7 @@ $dark: (
   ),
 );
 
-$light: (
+$reverse: (
   "background-color": (
     "checked": ("light", 800),
     "unchecked": ("dark", 950),
@@ -145,14 +145,9 @@ $danger: (
   ),
 );
 
-$mode: $dark;
-$reverse: $light;
-
 $layer-checkbox: (
   "mode": $mode,
   "reverse": $reverse,
-  "light": $light,
-  "dark": $dark,
   "primary": $primary,
   "success": $success,
   "info": $info,

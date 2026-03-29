@@ -7,8 +7,6 @@
           <t-radio-group v-model="role" orientation="horizontal">
             <t-radio value="mode" role="mode">Mode</t-radio>
             <t-radio value="reverse" role="reverse">Reverse</t-radio>
-            <t-radio value="light" role="light">Light</t-radio>
-            <t-radio value="dark" role="dark">Dark</t-radio>
             <t-radio value="primary" role="primary">Primary</t-radio>
             <t-radio value="success" role="success">Success</t-radio>
             <t-radio value="info" role="info">Info</t-radio>

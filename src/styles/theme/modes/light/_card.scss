@@ -1,11 +1,11 @@
 // Matches vue card components: card-background-color, card-color, card-border-color (no states).
-$light: (
+$mode: (
   "background-color": ("light", 950),
   "color": ("dark", 900),
   "border-color": ("light", 850),
 );
 
-$dark: (
+$reverse: (
   "background-color": ("dark", 700),
   "color": ("light", 900),
   "border-color": ("dark", 850),
@@ -41,14 +41,9 @@ $danger: (
   "border-color": ("danger", 800),
 );
 
-$mode: $light;
-$reverse: $dark;
-
 $layer-card: (
   "mode": $mode,
   "reverse": $reverse,
-  "light": $light,
-  "dark": $dark,
   "primary": $primary,
   "success": $success,
   "info": $info,

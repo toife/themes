@@ -1,10 +1,10 @@
-$light: (
+$mode: (
   "background-color": ("light", 700),
   "color": ("dark", 900),
   "border-color": ("light", 700),
 );
 
-$dark: (
+$reverse: (
   "background-color": ("dark", 700),
   "color": ("light", 900),
   "border-color": ("dark", 700),
@@ -40,14 +40,9 @@ $danger: (
   "border-color": ("danger", 550),
 );
 
-$mode: $light;
-$reverse: $dark;
-
 $layer-toast: (
   "mode": $mode,
   "reverse": $reverse,
-  "light": $light,
-  "dark": $dark,
   "primary": $primary,
   "success": $success,
   "info": $info,

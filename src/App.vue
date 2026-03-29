@@ -5,16 +5,22 @@
        <div class="header-toolbar-controls">
           <t-switch v-model="isDarkMode">Dark Mode</t-switch>
           <t-switch v-model="isShadow">Shadow</t-switch>
-          <t-radio-group v-model="direction" orientation="horizontal">
-            <t-radio value="left">Left</t-radio>
-            <t-radio value="right">Right</t-radio>
-          </t-radio-group>
-          <t-radio-group v-model="shape" orientation="horizontal">
-            <t-radio value="rounded">Rounded</t-radio>
-            <t-radio value="flat">Flat</t-radio>
-            <t-radio value="pill">Pill</t-radio>
-          </t-radio-group>
           <t-switch v-model="isDivider">Divider</t-switch>
+          <div class="header-group-controls">
+            <label for="direction">Direction:</label>
+            <t-radio-group id="direction" v-model="direction" orientation="horizontal">
+              <t-radio value="left">Left</t-radio>
+              <t-radio value="right">Right</t-radio>
+            </t-radio-group>
+          </div>
+          <div class="header-group-controls">
+            <label for="shape">Shape:</label>
+            <t-radio-group id="shape" v-model="shape" orientation="horizontal">
+              <t-radio value="rounded">Rounded</t-radio>
+              <t-radio value="flat">Flat</t-radio>
+              <t-radio value="pill">Pill</t-radio>
+            </t-radio-group>
+          </div>
        </div>
       </t-toolbar>
     </t-cable>
@@ -36,8 +42,28 @@
 
 .header-toolbar-controls{
   display: flex;
-  gap: 2rem;
   flex-direction: row;
+  height: unset !important;
+  
+  > div {
+    &:not(:last-child) {
+      border-right: 1px solid rgba(0, 0, 0, 0.08);
+    }
+    padding: 0 2rem;
+  }
+}
+
+.header-group-controls{
+  display: flex;
+  gap: 0.5rem;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+
+  label{
+    font-size: 0.7rem;
+    text-transform: uppercase;
+  }
 }
 </style>
 

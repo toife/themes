@@ -1,8 +1,8 @@
-$light: (
+$mode: (
   "color": ("light", 700),
 );
 
-$dark: (
+$reverse: (
   "color": ("dark", 700),
 );
 
@@ -26,14 +26,9 @@ $danger: (
   "color": ("danger", 550),
 );
 
-$mode: $light;
-$reverse: $dark;
-
 $layer-segmented-field: (
   "mode": $mode,
   "reverse": $reverse,
-  "light": $light,
-  "dark": $dark,
   "primary": $primary,
   "success": $success,
   "info": $info,

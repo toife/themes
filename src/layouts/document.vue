@@ -155,6 +155,8 @@ const componentNavGroups: ComponentNavGroup[] = [
       { to: "/components/switch", label: "Switch", tag: "t-switch" },
       { to: "/components/button", label: "Button", tag: "t-button" },
       { to: "/components/form-group", label: "Form group", tag: "t-form-group" },
+      { to: "/components/dropdown", label: "Dropdown", tag: "t-dropdown" },
+      { to: "/components/select", label: "Select", tag: "t-select" },
     ],
   },
   {

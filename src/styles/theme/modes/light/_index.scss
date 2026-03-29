@@ -7,6 +7,7 @@
 @use "switch";
 @use "segmented-field";
 @use "radio";
+@use "select";
 @use "modal";
 @use "field";
 @use "decision-modal";
@@ -17,6 +18,7 @@
 @use "avatar";
 @use "action";
 @use "divider";
+@use "dropdown";
 @use "toast";
 @use "skeleton";
 @use "gesture-indicator";
@@ -30,6 +32,7 @@ $layers: (
   "switch": switch.$layer-switch,
   "segmented-field": segmented-field.$layer-segmented-field,
   "radio": radio.$layer-radio,
+  "select": select.$layer-select,
   "modal": modal.$layer-modal,
   "field": field.$layer-field,
   "decision-modal": decision-modal.$layer-decision-modal,
@@ -40,6 +43,7 @@ $layers: (
   "avatar": avatar.$layer-avatar,
   "action": action.$layer-action,
   "divider": divider.$layer-divider,
+  "dropdown": dropdown.$layer-dropdown,
   "toast": toast.$layer-toast,
   "skeleton": skeleton.$layer-skeleton,
   "gesture-indicator": gesture-indicator.$layer-gesture-indicator,

@@ -1,9 +1,9 @@
 // Matches vue action.scss: action-border-color only (divider between buttons; no states).
-$light: (
+$mode: (
   "border-color": ("light", 700),
 );
 
-$dark: (
+$reverse: (
   "border-color": ("dark", 700),
 );
 
@@ -27,14 +27,9 @@ $danger: (
   "border-color": ("danger", 550),
 );
 
-$mode: $light;
-$reverse: $dark;
-
 $layer-action: (
   "mode": $mode,
   "reverse": $reverse,
-  "light": $light,
-  "dark": $dark,
   "primary": $primary,
   "success": $success,
   "info": $info,
