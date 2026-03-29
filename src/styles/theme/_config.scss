@@ -34,39 +34,57 @@ $overlay: (
   "max-height": $overlay-max-height,
 ) !default;
 
+$shape-flat-border-radius: 0rem !default;
+$shape-rounded-border-radius: 0.5rem !default;
+$shape-pill-border-radius: 2rem !default;
 $shapes: (
   "flat": (
-    "border-radius": 0rem,
+    "border-radius": $shape-flat-border-radius,
   ),
   "rounded": (
-    "border-radius": 0.5rem,
+    "border-radius": $shape-rounded-border-radius,
   ),
   "pill": (
-    "border-radius": 2rem,
+    "border-radius": $shape-pill-border-radius,
   ),
 ) !default;
 
+$size-small-height: 28px !default;
+$size-small-font-size: 0.8em !default;
+$size-small-line-height: 1.5 !default;
+$size-small-coefficient-x: 2 !default;
+$size-small-coefficient-y: 1 !default;
+$size-standard-height: 38px !default;
+$size-standard-font-size: 1em !default;
+$size-standard-line-height: 1.5 !default;
+$size-standard-coefficient-x: 3 !default;
+$size-standard-coefficient-y: 2 !default;
+$size-large-height: 48px !default;
+$size-large-font-size: 1.2em !default;
+$size-large-line-height: 1.5 !default;
+$size-large-coefficient-x: 4 !default;
+$size-large-coefficient-y: 3 !default;
 $sizes: (
   "small": (
-    "height": 28px,
-    "font-size": 0.8em,
-    "line-height": 1.5,
-    "coefficient-x": 2,
-    "coefficient-y": 1,
+    "height": $size-small-height,
+    "font-size": $size-small-font-size,
+    "line-height": $size-small-line-height,
+    "coefficient-x": $size-small-coefficient-x,
+    "coefficient-y": $size-small-coefficient-y,
   ),
   "standard": (
-    "height": 38px,
-    "font-size": 1em,
-    "line-height": 1.5,
-    "coefficient-x": 3,
-    "coefficient-y": 2,
+    "height": $size-standard-height,
+    "font-size": $size-standard-font-size,
+    "line-height": $size-standard-line-height,
+    "coefficient-x": $size-standard-coefficient-x,
+    "coefficient-y": $size-standard-coefficient-y,
   ),
   "large": (
-    "height": 48px,
-    "font-size": 1.2em,
-    "line-height": 1.5,
-    "coefficient-x": 4,
-    "coefficient-y": 3,
+    "height": $size-large-height,
+    "font-size": $size-large-font-size,
+    "line-height": $size-large-line-height,
+    "coefficient-x": $size-large-coefficient-x,
+    "coefficient-y": $size-large-coefficient-y,
   ),
 ) !default;
 
