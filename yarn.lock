@@ -1104,26 +1104,26 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@toife/sass-layer-generator@npm:^1.0.9":
-  version: 1.0.9
-  resolution: "@toife/sass-layer-generator@npm:1.0.9"
+"@toife/sass-layer-generator@npm:^1.1.0":
+  version: 1.1.0
+  resolution: "@toife/sass-layer-generator@npm:1.1.0"
   peerDependencies:
     sass: ">=1.50.0"
-  checksum: 10c0/8dfd675c30b85b8b875b5b9facba655c067210d7db24f530befffa3c49d3c5533dbbcaa971a57d8a5c0836ab755ef7e71d069c8626800a058c5e51f455d184bb
+  checksum: 10c0/66d3b6e705264df99406f9b867e29adc67c5c21435c3595ba14581536d34ac09dfb9994443924e065e2fb3d628e5f8add466db97dbe46fde798bc1e8cdad263e
   languageName: node
   linkType: hard
 
-"@toife/vue@npm:^3.0.6":
-  version: 3.0.6
-  resolution: "@toife/vue@npm:3.0.6"
+"@toife/vue@file:../vue::locator=doc-page%40workspace%3A.":
+  version: 3.0.7
+  resolution: "@toife/vue@file:../vue#../vue::hash=29167b&locator=doc-page%40workspace%3A."
   dependencies:
     "@toife/gesture": "npm:^1.1.4"
   peerDependencies:
     "@toife/gesture": ^1.1.4
-    "@toife/sass-layer-generator": ^1.0.9
+    "@toife/sass-layer-generator": "*"
     vue: ^3.5.0
     vue-router: ^4.0.0
-  checksum: 10c0/2fd2004c878aa7260003d4abc870bdb8fe3a0c311db2ad13446cc6e664e547adaddb1ca6dd70d44476d4658cac163079d4da7404d08ab5d24917c4f8df8c2e8a
+  checksum: 10c0/87a7d4ec411087c11de26b3756c3b34ecf572e751cba5685ef670f7298ad5183f782aca43d29b8d90a88454ca361609dfcd445954cd0af83d4119f8350ae2064
   languageName: node
   linkType: hard
 
@@ -1671,8 +1671,8 @@ __metadata:
   resolution: "doc-page@workspace:."
   dependencies:
     "@toife/gesture": "npm:^1.1.4"
-    "@toife/sass-layer-generator": "npm:^1.0.9"
-    "@toife/vue": "npm:^3.0.6"
+    "@toife/sass-layer-generator": "npm:^1.1.0"
+    "@toife/vue": "file:../vue"
     "@types/node": "npm:^22.10.0"
     "@vitejs/plugin-vue": "npm:^6.0.1"
     sass: "npm:^1.90.0"

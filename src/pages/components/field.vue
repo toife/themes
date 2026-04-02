@@ -16,7 +16,14 @@
         </div>
         <t-divider class="my-4" />
         <div class="field-examples">
-          <t-field v-model="text" :role="role" placeholder="Outline field" />
+          <t-field v-model="text" :role="role" placeholder="Outline field">
+            <template #start-input>
+             123
+            </template>
+            <template #end-input>
+             456
+            </template>
+          </t-field>
           <t-field v-model="text" :role="role" placeholder="Disabled" disabled />
           <t-field v-model="text" :role="role" placeholder="Readonly" readonly />
           <t-field v-model="email" :role="role" type="email" placeholder="Email" />

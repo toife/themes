@@ -88,6 +88,17 @@ $sizes: (
   ),
 ) !default;
 
+$directions: (
+  "left": (
+    "text-align": left,
+    "justify-content": start,
+  ),
+  "right": (
+    "text-align": right,
+    "justify-content": end,
+  ),
+) !default;
+
 $roles: (
   "light": (
     #ffffff,
