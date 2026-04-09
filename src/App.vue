@@ -1,9 +1,9 @@
 <template>
   <t-app :shape="shape" :divider="isDivider" :shadow="isShadow" :direction="direction">
-    <t-cable placement="top">
+    <t-cable placement="top" class="top-cable" :class="{'active': route.name !== 'home'}">
       <t-toolbar class="header-toolbar">
        <div class="header-toolbar-controls">
-          <t-switch v-model="isDarkMode">Dark Mode</t-switch>
+          <!-- <t-switch v-model="isDarkMode">Dark Mode</t-switch> -->
           <t-switch v-model="isShadow">Shadow</t-switch>
           <t-switch v-model="isDivider">Divider</t-switch>
           <div class="header-group-controls">
@@ -25,12 +25,21 @@
       </t-toolbar>
     </t-cable>
     <t-route-wrapper>
-      <t-route-navigator variant="swipe" />
+      <t-route-navigator variant="swipe"/>
     </t-route-wrapper>
   </t-app>
 </template>
 
 <style lang="scss" scoped>
+.top-cable {
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+
+  &.active {
+    opacity: 1;
+  }
+}
+
 :deep(.header-toolbar > div > *) {
   flex: none !important;
 }
@@ -69,6 +78,8 @@
 
 <script setup lang="ts">
 import { computed, onMounted, ref, watch } from "vue";
+import { useRoute } from "vue-router";
+const route = useRoute();
 const shape = ref<"rounded" | "flat" | "pill">("rounded");
 const direction = ref<"left" | "right">("left");
 const isDarkMode = ref<boolean>(localStorage.getItem("t-mode") === "dark");

@@ -14,6 +14,28 @@
             </a>
           </router-link>
 
+          <router-link v-slot="{ href, navigate, isExactActive }" custom to="/installation">
+            <a
+              :href="href"
+              class="document-sidebar-link"
+              :class="{ 'router-link-active': isExactActive }"
+              @click="navigate"
+            >
+              Installation
+            </a>
+          </router-link>
+
+          <router-link v-slot="{ href, navigate, isExactActive }" custom to="/components">
+            <a
+              :href="href"
+              class="document-sidebar-link"
+              :class="{ 'router-link-active': isExactActive }"
+              @click="navigate"
+            >
+              Components
+            </a>
+          </router-link>
+
           <div
             v-for="group in componentNavGroups"
             :key="group.title"

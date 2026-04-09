@@ -4,8 +4,8 @@
       <t-card-header>Dropdown</t-card-header>
       <t-card-body>
         <p class="demo-lead">
-          <code>t-dropdown</code> bọc trigger và panel; dùng slot <code>#trigger</code> với
-          <code>toggle</code> / <code>open</code>, nội dung panel đặt trong default slot.
+          <code>t-dropdown</code> wraps a trigger and panel; use the <code>#trigger</code> slot with
+          <code>toggle</code> / <code>open</code>, and place panel content in the default slot.
         </p>
         <div>
           <t-radio-group v-model="role" orientation="horizontal">
@@ -20,11 +20,11 @@
         </div>
         <t-divider class="my-4" />
         <section class="demo-section">
-          <h3 class="demo-heading">Cơ bản</h3>
+          <h3 class="demo-heading">Basic</h3>
           <div class="demo-row">
             <t-dropdown v-model="menuOpen" :role="role">
               <template #trigger="{ toggle }">
-                <t-button :role="role" variant="outline" @click="toggle">Mở menu</t-button>
+                <t-button :role="role" variant="outline" @click="toggle">Open menu</t-button>
               </template>
               <button
                 v-for="item in menuItems"
@@ -36,7 +36,7 @@
                 {{ item }}
               </button>
             </t-dropdown>
-            <span v-if="lastPick" class="demo-hint">Đã chọn: {{ lastPick }}</span>
+            <span v-if="lastPick" class="demo-hint">Selected: {{ lastPick }}</span>
           </div>
         </section>
         <t-divider class="my-4" />
@@ -49,7 +49,7 @@
                   bottom-start
                 </t-button>
               </template>
-              <button type="button" class="dropdown-demo-row" @click="p1 = false">Đóng</button>
+              <button type="button" class="dropdown-demo-row" @click="p1 = false">Close</button>
             </t-dropdown>
             <t-dropdown v-model="p2" placement="bottom-end" :role="role">
               <template #trigger="{ toggle }">
@@ -57,7 +57,7 @@
                   bottom-end
                 </t-button>
               </template>
-              <button type="button" class="dropdown-demo-row" @click="p2 = false">Đóng</button>
+              <button type="button" class="dropdown-demo-row" @click="p2 = false">Close</button>
             </t-dropdown>
             <t-dropdown v-model="p3" placement="top-start" :role="role">
               <template #trigger="{ toggle }">
@@ -65,7 +65,7 @@
                   top-start
                 </t-button>
               </template>
-              <button type="button" class="dropdown-demo-row" @click="p3 = false">Đóng</button>
+              <button type="button" class="dropdown-demo-row" @click="p3 = false">Close</button>
             </t-dropdown>
             <t-dropdown v-model="p4" placement="top-end" :role="role">
               <template #trigger="{ toggle }">
@@ -73,7 +73,7 @@
                   top-end
                 </t-button>
               </template>
-              <button type="button" class="dropdown-demo-row" @click="p4 = false">Đóng</button>
+              <button type="button" class="dropdown-demo-row" @click="p4 = false">Close</button>
             </t-dropdown>
           </div>
         </section>
@@ -82,9 +82,9 @@
           <h3 class="demo-heading">Disabled</h3>
           <t-dropdown v-model="disabledOpen" disabled :role="role">
             <template #trigger="{ toggle }">
-              <t-button :role="role" variant="outline" @click="toggle">Không mở được</t-button>
+              <t-button :role="role" variant="outline" @click="toggle">Cannot open</t-button>
             </template>
-            <button type="button" class="dropdown-demo-row">Ẩn</button>
+            <button type="button" class="dropdown-demo-row">Hidden</button>
           </t-dropdown>
         </section>
       </t-card-body>
@@ -98,7 +98,7 @@ import { ref } from "vue";
 const role = ref("mode");
 const menuOpen = ref(false);
 const lastPick = ref("");
-const menuItems = ["Tuỳ chọn A", "Tuỳ chọn B", "Tuỳ chọn C"];
+const menuItems = ["Option A", "Option B", "Option C"];
 
 const pickMenu = (label: string) => {
   lastPick.value = label;

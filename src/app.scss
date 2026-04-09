@@ -1,5 +1,5 @@
-// Entry cho theme + utility classes. Dùng bởi app.scss.
-// Cả test:dev và test:build đều compile file này → tokens + classes đều có trong CSS.
+// Entry for theme + utility classes. Used by app.scss.
+// Both test:dev and test:build compile this file -> tokens + classes are included in CSS.
 // IMPORTANT: Load sass-layer-generator with config FIRST (before themes) so custom config applies
 @use "@toife/sass-layer-generator" as sass;
 @use "./styles/theme" as theme;

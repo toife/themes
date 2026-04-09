@@ -1,17 +1,31 @@
 export default [
   {
-    path: "/example",
-    redirect: "/components",
-  },
-  {
     path: "/",
-    name: "root",
-    component: () => import("../layouts/document.vue"),
+    name: "main-root",
+    component: () => import("../layouts/main.vue"),
     children: [
       {
         path: "/",
         name: "home",
         component: () => import("../pages/home.vue"),
+      },
+    ],
+  },
+  {
+    path: "/",
+    name: "document-root",
+    component: () => import("../layouts/document.vue"),
+    children: [
+      {
+        path: "/installation",
+        name: "installation",
+        component: () => import("../pages/installation.vue"),
+      },
+
+      {
+        path: "/components",
+        name: "components-root",
+        component: () => import("../pages/components.vue"),
       },
 
       {

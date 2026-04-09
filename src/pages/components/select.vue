@@ -4,8 +4,8 @@
       <t-card-header>Select</t-card-header>
       <t-card-body>
         <p class="demo-lead">
-          <code>t-select</code> kết hợp combobox với danh sách <code>options</code>; hỗ trợ placeholder,
-          validation message, placement của panel và các variant giống field.
+          <code>t-select</code> combines a combobox with an <code>options</code> list; supports placeholder,
+          validation message, panel placement, and field-like variants.
         </p>
         <div>
           <t-radio-group v-model="role" orientation="horizontal">
@@ -20,15 +20,15 @@
         </div>
         <t-divider class="my-4" />
         <section class="demo-section">
-          <h3 class="demo-heading">Cơ bản</h3>
+          <h3 class="demo-heading">Basic</h3>
           <t-select
             v-model="city"
             :role="role"
             :options="cityOptions"
-            placeholder="Chọn thành phố"
-            help="Chọn một mục trong danh sách."
+            placeholder="Select a city"
+            help="Select one item from the list."
           />
-          <p v-if="city !== null" class="demo-hint">Giá trị: <code>{{ city }}</code></p>
+          <p v-if="city !== null" class="demo-hint">Value: <code>{{ city }}</code></p>
         </section>
         <t-divider class="my-4" />
         <section class="demo-section">
@@ -54,13 +54,13 @@
         </section>
         <t-divider class="my-4" />
         <section class="demo-section">
-          <h3 class="demo-heading">Trạng thái</h3>
+          <h3 class="demo-heading">State</h3>
           <div class="select-stack">
             <t-select
               v-model="status"
               :role="role"
               :options="statusOptions"
-              placeholder="Có mục disabled"
+              placeholder="Has a disabled option"
             />
             <t-select
               v-model="locked"
@@ -80,8 +80,8 @@
               v-model="errVal"
               :role="role"
               :options="cityOptions"
-              placeholder="Có message lỗi"
-              message="Vui lòng chọn một giá trị hợp lệ."
+              placeholder="With error message"
+              message="Please select a valid value."
             />
           </div>
         </section>
@@ -98,8 +98,8 @@
         </section>
         <t-divider class="my-4" />
         <section class="demo-section">
-          <h3 class="demo-heading">Slot option (tuỳ biến hiển thị)</h3>
-          <t-select v-model="emoji" :role="role" :options="emojiOptions" placeholder="Chọn icon">
+          <h3 class="demo-heading">Option slot (custom rendering)</h3>
+          <t-select v-model="emoji" :role="role" :options="emojiOptions" placeholder="Select an icon">
             <template #option="{ option, selected }">
               <span class="select-option-custom" :class="{ selected }">
                 <span class="select-option-emoji">{{ option.label.split(" ")[0] }}</span>
@@ -119,9 +119,9 @@ import { ref } from "vue";
 const role = ref("mode");
 
 const cityOptions = [
-  { label: "Hà Nội", value: "hn" },
-  { label: "TP. Hồ Chí Minh", value: "hcm" },
-  { label: "Đà Nẵng", value: "dn" },
+  { label: "Hanoi", value: "hn" },
+  { label: "Ho Chi Minh City", value: "hcm" },
+  { label: "Da Nang", value: "dn" },
 ];
 const city = ref<string | null>(null);
 
@@ -133,9 +133,9 @@ const tierOptions = [
 const tier = ref<string | null>(null);
 
 const statusOptions = [
-  { label: "Bản nháp", value: "draft" },
-  { label: "Đã gửi", value: "sent", disabled: true },
-  { label: "Đã duyệt", value: "approved" },
+  { label: "Draft", value: "draft" },
+  { label: "Sent", value: "sent", disabled: true },
+  { label: "Approved", value: "approved" },
 ];
 const status = ref<string | null>(null);
 
@@ -144,15 +144,15 @@ const readonlyVal = ref<string | null>("hcm");
 const errVal = ref<string | null>(null);
 
 const placementOptions = [
-  { label: "Mục 1", value: "1" },
-  { label: "Mục 2", value: "2" },
+  { label: "Item 1", value: "1" },
+  { label: "Item 2", value: "2" },
 ];
 const placementDemo = ref<string | null>(null);
 
 const emojiOptions = [
-  { label: "⭐ Sao", value: "star" },
-  { label: "🔔 Chuông", value: "bell" },
-  { label: "📌 Ghim", value: "pin" },
+  { label: "⭐ Star", value: "star" },
+  { label: "🔔 Bell", value: "bell" },
+  { label: "📌 Pin", value: "pin" },
 ];
 const emoji = ref<string | null>(null);
 </script>
