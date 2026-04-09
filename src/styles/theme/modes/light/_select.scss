@@ -1,35 +1,77 @@
 $mode: (
-  "background-color": ("light", 700),
+  "background-color": (
+    "": ("light", 700),
+    "hover": ("light", 900),
+    "focus": ("light", 850),
+    "active": ("light", 850),
+  ),
+  "color": ("dark", 900),
   "border-color": ("light", 700),
 );
 
 $reverse: (
-  "background-color": ("dark", 700),
+  "background-color": (
+    "": ("dark", 700),
+    "hover": ("dark", 600),
+    "focus": ("dark", 500),
+    "active": ("dark", 500),
+  ),
+  "color": ("light", 900),
   "border-color": ("dark", 700),
 );
 
 $primary: (
-  "background-color": ("primary", 550),
+  "background-color": (
+    "": ("primary", 550),
+    "hover": ("primary", 650),
+    "focus": ("primary", 750),
+    "active": ("primary", 750),
+  ),
+  "color": ("light", 900),
   "border-color": ("primary", 550),
 );
 
 $success: (
-  "background-color": ("success", 550),
+  "background-color": (
+    "": ("success", 550),
+    "hover": ("success", 650),
+    "focus": ("success", 750),
+    "active": ("success", 750),
+  ),
+  "color": ("light", 900),
   "border-color": ("success", 550),
 );
 
 $info: (
-  "background-color": ("info", 550),
+  "background-color": (
+    "": ("info", 550),
+    "hover": ("info", 650),
+    "focus": ("info", 750),
+    "active": ("info", 750),
+  ),
+  "color": ("light", 900),
   "border-color": ("info", 550),
 );
 
 $warning: (
-  "background-color": ("warning", 550),
+  "background-color": (
+    "": ("warning", 550),
+    "hover": ("warning", 650),
+    "focus": ("warning", 750),
+    "active": ("warning", 750),
+  ),
+  "color": ("dark", 900),
   "border-color": ("warning", 550),
 );
 
 $danger: (
-  "background-color": ("danger", 550),
+  "background-color": (
+    "": ("danger", 550),
+    "hover": ("danger", 650),
+    "focus": ("danger", 750),
+    "active": ("danger", 750),
+  ),
+  "color": ("light", 900),
   "border-color": ("danger", 550),
 );
 

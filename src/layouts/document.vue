@@ -129,13 +129,14 @@
       </aside>
 
       <main class="document-main">
-        <t-route-navigator variant="none" />
+        <t-route-navigator variant="none" @transform="onTransform" />
       </main>
     </div>
   </div>
 </template>
 
 <script setup lang="ts">
+import type { RouteNavigatorTransformState } from "@toife/vue";
 type ComponentNavItem = { to: string; label: string; tag: string };
 
 type SidebarNavGroupIcon = "form" | "layout" | "navigation" | "overlay" | "content" | "interaction";
@@ -210,6 +211,10 @@ const componentNavGroups: ComponentNavGroup[] = [
     ],
   },
 ];
+
+const onTransform = (transform: RouteNavigatorTransformState) => {
+  console.log(transform);
+};
 </script>
 
 <style scoped lang="scss">

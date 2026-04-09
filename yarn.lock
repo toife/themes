@@ -1114,16 +1114,16 @@ __metadata:
   linkType: hard
 
 "@toife/vue@file:../vue::locator=doc-page%40workspace%3A.":
-  version: 3.0.7
-  resolution: "@toife/vue@file:../vue#../vue::hash=29167b&locator=doc-page%40workspace%3A."
+  version: 3.0.8
+  resolution: "@toife/vue@file:../vue#../vue::hash=67f57c&locator=doc-page%40workspace%3A."
   dependencies:
     "@toife/gesture": "npm:^1.1.4"
+    "@toife/sass-layer-generator": "npm:^1.1.0"
   peerDependencies:
     "@toife/gesture": ^1.1.4
-    "@toife/sass-layer-generator": "*"
     vue: ^3.5.0
     vue-router: ^4.0.0
-  checksum: 10c0/87a7d4ec411087c11de26b3756c3b34ecf572e751cba5685ef670f7298ad5183f782aca43d29b8d90a88454ca361609dfcd445954cd0af83d4119f8350ae2064
+  checksum: 10c0/2f83ee6c9fade6fef63f821d0665748c93632983d7a90e4999e50810c1f34e6fbf2439a33330b1e5d9079058979b268e08590921fec2b8097e631c5cfaafcfbc
   languageName: node
   linkType: hard
 
