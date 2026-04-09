@@ -1,11 +1,15 @@
 $mode: (
   "background-color": (
-    "": ("light", 700),
+    "": ("light", 950),
     "hover": ("light", 900),
     "focus": ("light", 850),
     "active": ("light", 850),
   ),
-  "color": ("dark", 900),
+  "color": (
+    "": ("dark", 900),
+    "disabled": ("dark", 100),
+  ),
+  "message-color": ("dark", 900),
   "border-color": ("light", 700),
 );
 
@@ -16,7 +20,11 @@ $reverse: (
     "focus": ("dark", 500),
     "active": ("dark", 500),
   ),
-  "color": ("light", 900),
+  "color": (
+    "": ("light", 900),
+    "disabled": ("light", 500),
+  ),
+  "message-color": ("dark", 900),
   "border-color": ("dark", 700),
 );
 
@@ -27,7 +35,11 @@ $primary: (
     "focus": ("primary", 750),
     "active": ("primary", 750),
   ),
-  "color": ("light", 900),
+  "color": (
+    "": ("light", 900),
+    "disabled": ("primary", 100),
+  ),
+  "message-color": ("primary", 550),
   "border-color": ("primary", 550),
 );
 
@@ -38,7 +50,11 @@ $success: (
     "focus": ("success", 750),
     "active": ("success", 750),
   ),
-  "color": ("light", 900),
+  "color": (
+    "": ("light", 900),
+    "disabled": ("success", 100),
+  ),
+  "message-color": ("success", 550),
   "border-color": ("success", 550),
 );
 
@@ -49,7 +65,11 @@ $info: (
     "focus": ("info", 750),
     "active": ("info", 750),
   ),
-  "color": ("light", 900),
+  "color": (
+    "": ("light", 900),
+    "disabled": ("info", 100),
+  ),
+  "message-color": ("info", 550),
   "border-color": ("info", 550),
 );
 
@@ -60,7 +80,11 @@ $warning: (
     "focus": ("warning", 750),
     "active": ("warning", 750),
   ),
-  "color": ("dark", 900),
+  "color": (
+    "": ("dark", 900),
+    "disabled": ("warning", 100),
+  ),
+  "message-color": ("warning", 550),
   "border-color": ("warning", 550),
 );
 
@@ -71,7 +95,11 @@ $danger: (
     "focus": ("danger", 750),
     "active": ("danger", 750),
   ),
-  "color": ("light", 900),
+  "color": (
+    "": ("light", 900),
+    "disabled": ("danger", 100),
+  ),
+  "message-color": ("danger", 550),
   "border-color": ("danger", 550),
 );
 
