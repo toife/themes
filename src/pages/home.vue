@@ -1,52 +1,64 @@
 <template>
   <t-page>
     <main class="home-doc">
-      <section class="hero">
-        <p class="eyebrow">TOIFE UI</p>
-        <h1>Toife Libraries</h1>
-        <p class="lead">
-          A component library and theme system for building consistent Vue interfaces.
-        </p>
-        <p>
-          Toife helps teams ship UI faster with reusable components, predictable
-          styling, and a straightforward developer experience.
-        </p>
-        <div class="actions">
-          <router-link class="doc-link doc-link-primary" to="/installation">
-            Installation guide
-          </router-link>
-          <router-link class="doc-link" to="/components">Components</router-link>
-        </div>
-      </section>
+      <t-card>
+        <t-card-body>
+          <div class="hero-header">
+            <div>
+              <img src="/toife.png" alt="Logo" class="logo">
+            </div>
+            <div>
+              <h1>Toife UI Components</h1>
+            </div>
+          </div>
+          <p class="lead">
+            A component library and theme system for building consistent Vue interfaces.
+          </p>
+          <p>
+            Toife helps teams ship UI faster with reusable components, predictable
+            styling, and a straightforward developer experience.
+          </p>
+          <div class="actions">
+            <router-link class="doc-link doc-link-primary" to="/installation">
+              Installation guide
+            </router-link>
+            <router-link class="doc-link" to="/components">Components</router-link>
+          </div>
+        </t-card-body>
+      </t-card>
 
-      <section class="section">
-        <h2>Why Toife</h2>
-        <div class="feature-grid">
-          <article class="feature-card">
-            <h3>Consistent design</h3>
-            <p>Shared styles and components keep every screen aligned.</p>
-          </article>
-          <article class="feature-card">
-            <h3>Composable by default</h3>
-            <p>Flexible building blocks for real product workflows.</p>
-          </article>
-          <article class="feature-card">
-            <h3>Fast onboarding</h3>
-            <p>Simple setup and practical API choices for Vue teams.</p>
-          </article>
-        </div>
-      </section>
+      <t-card class="mt-4">
+        <t-card-body>
+          <h2>Why Toife</h2>
+          <div class="feature-grid">
+            <article class="feature-card">
+              <h3>Consistent design</h3>
+              <p>Shared styles and components keep every screen aligned.</p>
+            </article>
+            <article class="feature-card">
+              <h3>Composable by default</h3>
+              <p>Flexible building blocks for real product workflows.</p>
+            </article>
+            <article class="feature-card">
+              <h3>Fast onboarding</h3>
+              <p>Simple setup and practical API choices for Vue teams.</p>
+            </article>
+          </div>
+        </t-card-body>
+      </t-card>
 
-      <section class="section quick-start">
-        <h2>Quick start</h2>
-        <p>
-          Start with installation, then explore available components in the docs.
-        </p>
-        <div class="quick-links">
-          <router-link class="text-link" to="/installation">Read installation docs</router-link>
-          <router-link class="text-link" to="/components/action">Browse all components</router-link>
-        </div>
-      </section>
+      <t-card class="mt-4">
+        <t-card-body>
+          <h2>Quick start</h2>
+          <p>
+            Start with installation, then explore available components in the docs.
+          </p>
+          <div class="quick-links">
+            <router-link class="text-link" to="/installation">Read installation docs</router-link>
+            <router-link class="text-link" to="/components/action">Browse all components</router-link>
+          </div>
+        </t-card-body>
+      </t-card>
     </main>
   </t-page>
 </template>
@@ -59,11 +71,15 @@
   color: #111111;
 }
 
-.hero {
-  border: 1px solid #dddddd;
-  border-radius: 12px;
-  padding: 1.25rem;
-  background: #ffffff;
+.hero-header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+
+  .logo {
+    width: 4rem;
+    height: 4rem;
+  }
 }
 
 .eyebrow {
@@ -94,14 +110,6 @@ p {
   margin: 0 0 0.75rem;
   color: #333333;
   line-height: 1.65;
-}
-
-.section {
-  margin-top: 1.4rem;
-  border: 1px solid #e4e4e4;
-  border-radius: 12px;
-  padding: 1rem 1.1rem;
-  background: #ffffff;
 }
 
 .feature-grid {

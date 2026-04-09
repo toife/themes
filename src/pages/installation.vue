@@ -1,9 +1,11 @@
 <template>
   <t-page>
-    <section class="installation-doc">
+    <section class="doc-page px-4 py-4">
       <t-card class="section-card">
-        <t-card-body>
+        <t-card-header>
           <h1>Installation</h1>
+        </t-card-header>
+        <t-card-body>
           <p class="lead">
             Install Toife packages and set up your Vue app in a few steps.
           </p>
@@ -11,18 +13,31 @@
       </t-card>
 
       <t-card class="section-card">
-        <t-card-body>
+        <t-card-header>
           <h2>1. Install packages</h2>
-          <p>Install the core Vue package and theme package:</p>
-          <pre><code>npm install @toife/vue @toife/sass-layer-generator</code></pre>
-          <pre><code>yarn add @toife/vue @toife/sass-layer-generator</code></pre>
-          <pre><code>pnpm add @toife/vue @toife/sass-layer-generator</code></pre>
+        </t-card-header>
+        <t-card-body>
+          <t-tabs v-model="pkgManager" variant="underline" :margin="[0, 0]" placement="top-start" class="pkg-tabs">
+            <t-tab value="npm">npm</t-tab>
+            <t-tab value="yarn">yarn</t-tab>
+            <t-tab value="pnpm">pnpm</t-tab>
+          </t-tabs>
+          <p>Install common packages:</p>
+          <pre v-if="pkgManager === 'npm'"><code>npm install @toife/sass-layer @toife/gesture</code></pre>
+          <pre v-else-if="pkgManager === 'yarn'"><code>yarn add @toife/sass-layer @toife/gesture</code></pre>
+          <pre v-else><code>pnpm add @toife/sass-layer @toife/gesture</code></pre>
+          <p>Install Toife Vue package:</p>
+          <pre v-if="pkgManager === 'npm'"><code>npm install @toife/vue</code></pre>
+          <pre v-else-if="pkgManager === 'yarn'"><code>yarn add @toife/vue</code></pre>
+          <pre v-else><code>pnpm add @toife/vue</code></pre>
         </t-card-body>
       </t-card>
 
       <t-card class="section-card">
-        <t-card-body>
+        <t-card-header>
           <h2>2. Import theme styles</h2>
+        </t-card-header>
+        <t-card-body>
           <p>Import the stylesheet in your app entry file:</p>
           <pre><code>// main.ts
 import { createApp } from 'vue'
@@ -33,8 +48,10 @@ createApp(App).mount('#app')</code></pre>
       </t-card>
 
       <t-card class="section-card">
-        <t-card-body>
+        <t-card-header>
           <h2>3. Register Toife</h2>
+        </t-card-header>
+        <t-card-body>
           <p>Register the plugin so components are available globally:</p>
           <pre><code>// main.ts
 import { createApp } from 'vue'
@@ -48,8 +65,10 @@ app.mount('#app')</code></pre>
       </t-card>
 
       <t-card class="section-card">
-        <t-card-body>
+        <t-card-header>
           <h2>4. Use components</h2>
+        </t-card-header>
+        <t-card-body>
           <p>You can now use Toife components in your templates:</p>
           <pre><code>&lt;template&gt;
   &lt;t-button type="button"&gt;Get started&lt;/t-button&gt;
@@ -60,12 +79,15 @@ app.mount('#app')</code></pre>
   </t-page>
 </template>
 
+<script setup lang="ts">
+import { ref } from "vue";
+
+const pkgManager = ref("npm");
+</script>
+
 <style scoped>
-.installation-doc {
-  max-width: 860px;
+.doc-page {
   margin: 0 auto;
-  padding: 28px 20px 48px;
-  color: #111111;
 }
 
 .section-card + .section-card {
@@ -101,6 +123,10 @@ pre {
   border-radius: 8px;
   background: #fafafa;
   overflow-x: auto;
+}
+
+.pkg-tabs {
+  margin-bottom: 1rem;
 }
 
 code {

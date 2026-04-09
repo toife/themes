@@ -1,8 +1,9 @@
 <template>
   <t-app :shape="shape" :divider="isDivider" :shadow="isShadow" :direction="direction">
-    <t-cable placement="top" class="top-cable" :class="{'active': route.name !== 'home'}">
+    <t-cable placement="top" class="top-cable" :style="{'visibility': isShowHeader ? 'visible' : 'hidden'}" :class="{'active': route.name !== 'home'}">
       <t-toolbar class="header-toolbar">
        <div class="header-toolbar-controls">
+        <img src="/toife.png" alt="Logo" class="logo">
           <!-- <t-switch v-model="isDarkMode">Dark Mode</t-switch> -->
           <t-switch v-model="isShadow">Shadow</t-switch>
           <t-switch v-model="isDivider">Divider</t-switch>
@@ -74,6 +75,11 @@
     text-transform: uppercase;
   }
 }
+
+.logo {
+  width: 2rem;
+  height: 2rem;
+}
 </style>
 
 <script setup lang="ts">
@@ -85,6 +91,7 @@ const direction = ref<"left" | "right">("left");
 const isDarkMode = ref<boolean>(localStorage.getItem("t-mode") === "dark");
 const isShadow = ref<boolean>(false);
 const isDivider = ref<boolean>(false);
+const isShowHeader = ref<boolean>(true);
 
 const setMode = (isDark: boolean) => {
   if (isDark) {
@@ -103,5 +110,15 @@ watch(isDarkMode, (newMode) => {
 
 onMounted(() => {
   setMode(isDarkMode.value);
+});
+
+watch(() => route.name, (newRoute) => {
+  if (newRoute === "home") {
+    setTimeout(() => {
+      isShowHeader.value = false;
+    }, 300);
+  } else {
+    isShowHeader.value = true;
+  }
 });
 </script>

@@ -151,7 +151,7 @@
       </aside>
 
       <main class="document-main">
-        <t-route-navigator variant="none" @transform="onTransform" />
+        <t-route-navigator variant="swipe" />
       </main>
     </div>
   </div>
@@ -233,10 +233,6 @@ const componentNavGroups: ComponentNavGroup[] = [
     ],
   },
 ];
-
-const onTransform = (transform: RouteNavigatorTransformState) => {
-  console.log(transform);
-};
 </script>
 
 <style scoped lang="scss">

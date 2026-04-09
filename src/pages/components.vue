@@ -1,6 +1,6 @@
 <template>
   <t-page>
-    <section class="components-doc">
+    <section class="doc-page px-4 py-4">
       <t-card>
         <t-card-body>
           <p class="eyebrow">COMPONENT LIBRARY</p>
@@ -19,7 +19,7 @@
               <li v-for="item in group.items" :key="item.to">
                 <router-link :to="item.to" class="component-link">
                   <span>{{ item.label }}</span>
-                  <code>{{ item.tag }}</code>
+                  <!-- <code>{{ item.tag }}</code> -->
                 </router-link>
               </li>
             </ul>
@@ -106,11 +106,8 @@ const componentGroups: ComponentGroup[] = [
 </script>
 
 <style scoped>
-.components-doc {
-  max-width: 980px;
+.doc-page {
   margin: 0 auto;
-  padding: 28px 20px 48px;
-  color: #111111;
 }
 
 .eyebrow {
