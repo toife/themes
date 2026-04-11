@@ -61,6 +61,7 @@ const componentGroups: ComponentGroup[] = [
     title: "Layout",
     items: [
       { to: "/components/container", label: "Container", tag: "t-container" },
+      { to: "/components/layout", label: "Grid", tag: "t-grid" },
       { to: "/components/card", label: "Card", tag: "t-card" },
       { to: "/components/collapse", label: "Collapse", tag: "t-collapse" },
       { to: "/components/divider", label: "Divider", tag: "t-divider" },

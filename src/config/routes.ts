@@ -83,6 +83,12 @@ export default [
       },
 
       {
+        path: "/components/layout",
+        name: "components-layout",
+        component: () => import("../pages/components/layout.vue"),
+      },
+
+      {
         path: "/components/decision-modal",
         name: "components-decision-modal",
         component: () => import("../pages/components/decision-modal.vue"),

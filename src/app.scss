@@ -2,9 +2,7 @@
 // Both test:dev and test:build compile this file -> tokens + classes are included in CSS.
 // IMPORTANT: Load sass-layer with config FIRST (before themes) so custom config applies
 @use "@toife/sass-layer" as sass;
-@use "./styles/theme" as theme;
-
-@include sass.theme-generate(theme.$theme);
+@include sass.theme-generate();
 @include sass.class-generate();
 
 body {

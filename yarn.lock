@@ -1104,41 +1104,22 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@toife/gesture@npm:^1.1.5":
-  version: 1.1.5
-  resolution: "@toife/gesture@npm:1.1.5"
-  checksum: 10c0/1ab0f51ec36b5306497c0003da3c87e3c6fb3e2f0a870435dc91348f403b763e157d36cf287c6855eb112c9e1c2d9745c73732e34e86ca77023ee6af65571d66
-  languageName: node
-  linkType: hard
-
 "@toife/sass-layer@file:../sass-layer::locator=doc-page%40workspace%3A.":
-  version: 1.0.0
-  resolution: "@toife/sass-layer@file:../sass-layer#../sass-layer::hash=0111cc&locator=doc-page%40workspace%3A."
+  version: 1.0.2
+  resolution: "@toife/sass-layer@file:../sass-layer#../sass-layer::hash=17a4e9&locator=doc-page%40workspace%3A."
   peerDependencies:
     sass: ">=1.50.0"
-  checksum: 10c0/95d73ccf1d15602800dcb9cdfaaec3c5a9819692c0aec9e4fbd07bb47ceef3ddacd32db901b56424a9bc6e162e64c1406be91567abba9381460980e7f03255a9
-  languageName: node
-  linkType: hard
-
-"@toife/sass-layer@npm:^1.0.0":
-  version: 1.0.0
-  resolution: "@toife/sass-layer@npm:1.0.0"
-  peerDependencies:
-    sass: ">=1.50.0"
-  checksum: 10c0/2576ddb1cf434cbcf56aded10d038fdde9d18f9d2b2fbeabb2b7ea41eaf3c72333776efdb9367890d2e3a6d030e7e21505a7a692ffa00df1e57ce528ffe5219c
+  checksum: 10c0/c2a56e823cd45be880daef3eff9a25a97e1df7fd0cf23ce596a7b88fb1d29a9661ccb099ee3c84fa773a8c4b143c753eaddbbe12e94d3e89180f53d6d223dc93
   languageName: node
   linkType: hard
 
 "@toife/vue@file:../vue::locator=doc-page%40workspace%3A.":
-  version: 3.0.8
-  resolution: "@toife/vue@file:../vue#../vue::hash=9c1882&locator=doc-page%40workspace%3A."
-  dependencies:
-    "@toife/gesture": "npm:^1.1.5"
-    "@toife/sass-layer": "npm:^1.0.0"
+  version: 3.1.0
+  resolution: "@toife/vue@file:../vue#../vue::hash=30c00c&locator=doc-page%40workspace%3A."
   peerDependencies:
     vue: ^3.5.0
     vue-router: ^4.0.0
-  checksum: 10c0/f83654f6d9d4291d37f11779faab80d1b92c9ebaa1092e9b80ab7f8e7232881b75eab1248c4e480dab18dbffdde163bd1e2c6e3ae0dbc7de324c2fe2c43ea1a5
+  checksum: 10c0/948fcccbfbb814394b299863213bf633a346593f8dfb1bb0fe6a745a9a0dd62802538521f901bdcd197c8ee7a8f752e67f5e733f4440603489d3a8c746e95bb5
   languageName: node
   linkType: hard
 

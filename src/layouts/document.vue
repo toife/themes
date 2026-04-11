@@ -187,6 +187,7 @@ const componentNavGroups: ComponentNavGroup[] = [
     icon: "layout",
     items: [
       { to: "/components/container", label: "Container", tag: "t-container" },
+      { to: "/components/layout", label: "Layout", tag: "t-grid, t-flex, t-cell" },
       { to: "/components/card", label: "Card", tag: "t-card" },
       { to: "/components/collapse", label: "Collapse", tag: "t-collapse" },
       { to: "/components/divider", label: "Divider", tag: "t-divider" },
