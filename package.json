@@ -12,7 +12,7 @@
     "docs:preview": "vitepress preview"
   },
   "dependencies": {
-    "@toife/gesture": "file:../gesture",
+    "@toife/gesture": "^1.1.5",
     "@toife/sass-layer": "file:../sass-layer",
     "@toife/vue": "file:../vue",
     "vue": "^3.5.30",

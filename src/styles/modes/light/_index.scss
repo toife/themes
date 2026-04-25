@@ -22,8 +22,9 @@
 @use "toast";
 @use "skeleton";
 @use "gesture-indicator";
+@use "slide-range";
 
-$layers: (
+$mode: (
   "backdrop": backdrop.$layer-backdrop,
   "text": text.$layer-text,
   "app": app.$layer-app,
@@ -47,4 +48,5 @@ $layers: (
   "toast": toast.$layer-toast,
   "skeleton": skeleton.$layer-skeleton,
   "gesture-indicator": gesture-indicator.$layer-gesture-indicator,
+  "slide-range": slide-range.$layer-slide-range,
 );

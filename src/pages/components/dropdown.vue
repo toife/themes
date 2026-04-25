@@ -1,5 +1,5 @@
 <template>
-  <t-page class="p-4">
+  <t-page class="padding-4">
     <t-card role="mode">
       <t-card-header>Dropdown</t-card-header>
       <t-card-body>
@@ -8,7 +8,7 @@
           <code>toggle</code> / <code>open</code>, and place panel content in the default slot.
         </p>
         <div>
-          <t-radio-group v-model="role" orientation="horizontal">
+          <t-radio-group v-model="role" direction="horizontal">
             <t-radio value="mode" role="mode">Mode</t-radio>
             <t-radio value="reverse" role="reverse">Reverse</t-radio>
             <t-radio value="primary" role="primary">Primary</t-radio>
@@ -18,7 +18,7 @@
             <t-radio value="danger" role="danger">Danger</t-radio>
           </t-radio-group>
         </div>
-        <t-divider class="my-4" />
+        <t-divider class="margin-y-4" />
         <section class="demo-section">
           <h3 class="demo-heading">Basic</h3>
           <div class="demo-row">
@@ -39,7 +39,7 @@
             <span v-if="lastPick" class="demo-hint">Selected: {{ lastPick }}</span>
           </div>
         </section>
-        <t-divider class="my-4" />
+        <t-divider class="margin-y-4" />
         <section class="demo-section">
           <h3 class="demo-heading">Placement</h3>
           <div class="demo-row demo-row--wrap">
@@ -77,7 +77,7 @@
             </t-dropdown>
           </div>
         </section>
-        <t-divider class="my-4" />
+        <t-divider class="margin-y-4" />
         <section class="demo-section">
           <h3 class="demo-heading">Disabled</h3>
           <t-dropdown v-model="disabledOpen" disabled :role="role">

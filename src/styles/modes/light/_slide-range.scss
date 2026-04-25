@@ -1,0 +1,128 @@
+$mode: (
+  "tooltip-background-color": ("light", 900),
+  "tooltip-color": ("light", 900),
+  "background-color": (
+    "": ("light", 900),
+    "hover": ("light", 850),
+    "focus": ("light", 800),
+    "active": ("light", 800),
+  ),
+  "border-color": (
+    "": ("light", 700),
+    "hover": ("light", 650),
+    "focus": ("light", 600),
+    "active": ("light", 600),
+  ),
+);
+
+$reverse: (
+  "tooltip-background-color": ("dark", 900),
+  "tooltip-color": ("dark", 900),
+  "background-color": (
+    "": ("dark", 850),
+    "hover": ("dark", 800),
+    "focus": ("dark", 750),
+    "active": ("dark", 750),
+  ),
+  "border-color": (
+    "": ("dark", 700),
+    "hover": ("dark", 650),
+    "focus": ("dark", 600),
+    "active": ("dark", 600),
+  ),
+);
+
+$primary: (
+  "tooltip-background-color": ("light", 900),
+  "tooltip-color": ("light", 900),
+  "background-color": (
+    "": ("light", 900),
+    "hover": ("light", 850),
+    "focus": ("light", 800),
+    "active": ("light", 800),
+  ),
+  "border-color": (
+    "": ("light", 700),
+    "hover": ("light", 650),
+    "focus": ("light", 600),
+    "active": ("light", 600),
+  ),
+);
+
+$success: (
+  "tooltip-background-color": ("light", 900),
+  "tooltip-color": ("light", 900),
+  "background-color": (
+    "": ("light", 900),
+    "hover": ("light", 850),
+    "focus": ("light", 800),
+    "active": ("light", 800),
+  ),
+  "border-color": (
+    "": ("light", 700),
+    "hover": ("light", 650),
+    "focus": ("light", 600),
+    "active": ("light", 600),
+  ),
+);
+
+$info: (
+  "tooltip-background-color": ("light", 900),
+  "tooltip-color": ("light", 900),
+  "background-color": (
+    "": ("light", 900),
+    "hover": ("light", 850),
+    "focus": ("light", 800),
+    "active": ("light", 800),
+  ),
+  "border-color": (
+    "": ("light", 700),
+    "hover": ("light", 650),
+    "focus": ("light", 600),
+    "active": ("light", 600),
+  ),
+);
+
+$warning: (
+  "tooltip-background-color": ("light", 900),
+  "tooltip-color": ("light", 900),
+  "background-color": (
+    "": ("light", 900),
+    "hover": ("light", 850),
+    "focus": ("light", 800),
+    "active": ("light", 800),
+  ),
+  "border-color": (
+    "": ("light", 700),
+    "hover": ("light", 650),
+    "focus": ("light", 600),
+    "active": ("light", 600),
+  ),
+);
+
+$danger: (
+  "tooltip-background-color": ("light", 900),
+  "tooltip-color": ("light", 900),
+  "background-color": (
+    "": ("light", 900),
+    "hover": ("light", 850),
+    "focus": ("light", 800),
+    "active": ("light", 800),
+  ),
+  "border-color": (
+    "": ("light", 700),
+    "hover": ("light", 650),
+    "focus": ("light", 600),
+    "active": ("light", 600),
+  ),
+);
+
+$layer-slide-range: (
+  "mode": $mode,
+  "reverse": $reverse,
+  "primary": $primary,
+  "success": $success,
+  "info": $info,
+  "warning": $warning,
+  "danger": $danger,
+);

@@ -1,10 +1,10 @@
 <template>
-  <t-page class="p-4">
+  <t-page class="padding-4">
     <t-card role="mode">
       <t-card-header>Example</t-card-header>
       <t-card-body>
         <div>
-          <t-radio-group v-model="role" orientation="horizontal">
+          <t-radio-group v-model="role" direction="horizontal">
             <t-radio value="mode" role="mode">Mode</t-radio>
             <t-radio value="reverse" role="reverse">Reverse</t-radio>
             <t-radio value="primary" role="primary">Primary</t-radio>
@@ -14,7 +14,7 @@
             <t-radio value="danger" role="danger">Danger</t-radio>
           </t-radio-group>
         </div>
-        <t-divider class="my-4" />
+        <t-divider class="margin-y-4" />
         <div class="skel-stack">
           <t-skeleton :role="role" width="60%" height="0.75rem" />
           <t-skeleton :role="role" width="100%" height="3rem" />

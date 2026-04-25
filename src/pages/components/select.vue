@@ -1,5 +1,5 @@
 <template>
-  <t-page class="p-4">
+  <t-page class="padding-4">
     <t-card role="mode">
       <t-card-header>Select</t-card-header>
       <t-card-body>
@@ -8,7 +8,7 @@
           validation message, panel placement, and field-like variants.
         </p>
         <div>
-          <t-radio-group v-model="role" orientation="horizontal">
+          <t-radio-group v-model="role" direction="horizontal">
             <t-radio value="mode" role="mode">Mode</t-radio>
             <t-radio value="reverse" role="reverse">Reverse</t-radio>
             <t-radio value="primary" role="primary">Primary</t-radio>
@@ -18,7 +18,7 @@
             <t-radio value="danger" role="danger">Danger</t-radio>
           </t-radio-group>
         </div>
-        <t-divider class="my-4" />
+        <t-divider class="margin-y-4" />
         <section class="demo-section">
           <h3 class="demo-heading">Basic</h3>
           <t-select
@@ -30,7 +30,7 @@
           />
           <p v-if="city !== null" class="demo-hint">Value: <code>{{ city }}</code></p>
         </section>
-        <t-divider class="my-4" />
+        <t-divider class="margin-y-4" />
         <section class="demo-section">
           <h3 class="demo-heading">Variant &amp; size</h3>
           <div class="select-stack">
@@ -52,7 +52,7 @@
             />
           </div>
         </section>
-        <t-divider class="my-4" />
+        <t-divider class="margin-y-4" />
         <section class="demo-section">
           <h3 class="demo-heading">State</h3>
           <div class="select-stack">
@@ -85,7 +85,7 @@
             />
           </div>
         </section>
-        <t-divider class="my-4" />
+        <t-divider class="margin-y-4" />
         <section class="demo-section">
           <h3 class="demo-heading">Placement panel</h3>
           <t-select
@@ -96,7 +96,7 @@
             placement="bottom-end"
           />
         </section>
-        <t-divider class="my-4" />
+        <t-divider class="margin-y-4" />
         <section class="demo-section">
           <h3 class="demo-heading">Option slot (custom rendering)</h3>
           <t-select v-model="emoji" :role="role" :options="emojiOptions" placeholder="Select an icon">

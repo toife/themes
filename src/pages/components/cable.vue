@@ -1,5 +1,5 @@
 <template>
-  <t-page class="p-4">
+  <t-page class="padding-4">
     <t-card role="mode">
       <t-card-header>Example</t-card-header>
       <t-card-body>
@@ -17,7 +17,7 @@
           </t-cable>
           <div class="cable-demo-body">Scrollable content area</div>
         </div>
-        <t-divider class="my-4" />
+        <t-divider class="margin-y-4" />
         <p class="section-label">Bottom cable</p>
         <div class="cable-demo-shell">
           <div class="cable-demo-body">Scrollable content area</div>
@@ -27,9 +27,9 @@
             </t-toolbar>
           </t-cable>
         </div>
-        <t-divider class="my-4" />
+        <t-divider class="margin-y-4" />
         <div>
-          <t-radio-group v-model="role" orientation="horizontal">
+          <t-radio-group v-model="role" direction="horizontal">
             <t-radio value="mode" role="mode">Mode</t-radio>
             <t-radio value="primary" role="primary">Primary</t-radio>
             <t-radio value="success" role="success">Success</t-radio>

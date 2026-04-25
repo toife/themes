@@ -8,7 +8,10 @@ $mode: (
     "active": ("dark", 900),
     "disabled": ("dark", 400),
   ),
-  "color": ("light", 900),
+  "color": (
+    "": ("light", 900),
+    "disabled": ("light", 400),
+  ),
   "border-color": (
     "": ("dark", 700),
     "hover": ("dark", 800),
@@ -29,7 +32,10 @@ $reverse: (
     "active": ("light", 900),
     "disabled": ("light", 400),
   ),
-  "color": ("dark", 900),
+  "color": (
+    "": ("dark", 900),
+    "disabled": ("dark", 400),
+  ),
   "border-color": (
     "": ("light", 750),
     "hover": ("light", 800),
@@ -50,7 +56,10 @@ $primary: (
     "active": ("primary", 750),
     "disabled": ("primary", 250),
   ),
-  "color": ("light", 900),
+  "color": (
+    "": ("light", 900),
+    "disabled": ("light", 400),
+  ),
   "border-color": (
     "": ("primary", 550),
     "hover": ("primary", 650),
@@ -71,7 +80,10 @@ $success: (
     "active": ("success", 750),
     "disabled": ("success", 250),
   ),
-  "color": ("light", 900),
+  "color": (
+    "": ("light", 900),
+    "disabled": ("light", 400),
+  ),
   "border-color": (
     "": ("success", 550),
     "hover": ("success", 650),
@@ -92,7 +104,10 @@ $info: (
     "active": ("info", 750),
     "disabled": ("info", 250),
   ),
-  "color": ("light", 900),
+  "color": (
+    "": ("light", 900),
+    "disabled": ("light", 400),
+  ),
   "border-color": (
     "": ("info", 550),
     "hover": ("info", 650),
@@ -113,7 +128,10 @@ $warning: (
     "active": ("warning", 750),
     "disabled": ("warning", 250),
   ),
-  "color": ("dark", 900),
+  "color": (
+    "": ("dark", 900),
+    "disabled": ("dark", 400),
+  ),
   "border-color": (
     "": ("warning", 550),
     "hover": ("warning", 650),
@@ -134,7 +152,10 @@ $danger: (
     "active": ("danger", 750),
     "disabled": ("danger", 250),
   ),
-  "color": ("light", 900),
+  "color": (
+    "": ("light", 900),
+    "disabled": ("light", 400),
+  ),
   "border-color": (
     "": ("danger", 550),
     "hover": ("danger", 650),

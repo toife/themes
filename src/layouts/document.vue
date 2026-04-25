@@ -266,7 +266,7 @@ const componentNavGroups: ComponentNavGroup[] = [
   flex: 1;
   min-height: 0;
   overflow: hidden;
-  padding-top: 50px;
+  padding-top: calc(48px + var(--t-safe-area-top));
 }
 
 .document-sidebar {

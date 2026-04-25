@@ -1,6 +1,6 @@
 <template>
   <t-page>
-    <section class="doc-page px-4 py-4">
+    <section class="doc-page padding-x-4 padding-y-4">
       <t-card class="section-card">
         <t-card-header>
           <h1>Installation</h1>

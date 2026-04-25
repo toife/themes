@@ -1,11 +1,11 @@
 <template>
-  <t-page class="p-4">
+  <t-page class="padding-4">
     <t-card role="mode">
       <t-card-header>Example</t-card-header>
       <t-card-body>
         <p class="section-label">Remote image</p>
         <t-image class="demo-image" :src="srcOk" alt="Sample" />
-        <t-divider class="my-4" />
+        <t-divider class="margin-y-4" />
         <p class="section-label">Fallback (defaultSrc)</p>
         <p class="mb-2">Broken URL falls back to a placeholder image.</p>
         <t-image

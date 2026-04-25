@@ -1,12 +1,12 @@
 <template>
-  <t-page class="p-4">
+  <t-page class="padding-4">
     <t-card role="mode">
       <t-card-header>Example</t-card-header>
       <t-card-body>
         <p class="mb-3">
           <code>t-page</code> is the standard scrollable surface inside the app shell. Component
           demo routes in this site wrap content in <code>t-page</code> with utility padding (e.g.
-          <code>class="p-4"</code>).
+          <code>class="padding-4"</code>).
         </p>
         <div class="page-demo-frame">
           <t-page class="page-demo-inner">

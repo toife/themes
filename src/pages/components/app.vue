@@ -1,5 +1,5 @@
 <template>
-  <t-page class="p-4">
+  <t-page class="padding-4">
     <t-card role="mode">
       <t-card-header>App shell</t-card-header>
       <t-card-body>

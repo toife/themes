@@ -1,16 +1,16 @@
 <template>
-  <t-page class="p-4">
+  <t-page class="padding-4">
     <t-card role="mode">
       <t-card-header>Example</t-card-header>
       <t-card-body>
         <div>
-          <t-radio-group v-model="placement" orientation="horizontal">
+          <t-radio-group v-model="placement" direction="horizontal">
             <t-radio value="bottom">Bottom</t-radio>
             <t-radio value="top">Top</t-radio>
             <t-radio value="center">Center</t-radio>
           </t-radio-group>
         </div>
-        <t-divider class="my-4" />
+        <t-divider class="margin-y-4" />
         <t-button :role="role" @click="open = true">Open present</t-button>
         <t-present :visible="open" :placement="placement" @close="onClose">
           <t-card :role="role" class="present-card">
@@ -21,9 +21,9 @@
             </t-card-body>
           </t-card>
         </t-present>
-        <t-divider class="my-4" />
+        <t-divider class="margin-y-4" />
         <div>
-          <t-radio-group v-model="role" orientation="horizontal">
+          <t-radio-group v-model="role" direction="horizontal">
             <t-radio value="mode" role="mode">Mode</t-radio>
             <t-radio value="primary" role="primary">Primary</t-radio>
             <t-radio value="reverse" role="reverse">Reverse</t-radio>

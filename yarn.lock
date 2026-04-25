@@ -1097,29 +1097,29 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@toife/gesture@file:../gesture::locator=doc-page%40workspace%3A.":
+"@toife/gesture@npm:^1.1.5":
   version: 1.1.5
-  resolution: "@toife/gesture@file:../gesture#../gesture::hash=117ee4&locator=doc-page%40workspace%3A."
-  checksum: 10c0/a081d7a58c0e308daf2244ef0bc832e71409a78903236b7201e8b4dcc8692ada72d04bbefb562e219384a6156bce935443efa10bf2a070c6e92ef785d1916ad5
+  resolution: "@toife/gesture@npm:1.1.5"
+  checksum: 10c0/1ab0f51ec36b5306497c0003da3c87e3c6fb3e2f0a870435dc91348f403b763e157d36cf287c6855eb112c9e1c2d9745c73732e34e86ca77023ee6af65571d66
   languageName: node
   linkType: hard
 
 "@toife/sass-layer@file:../sass-layer::locator=doc-page%40workspace%3A.":
-  version: 1.0.2
-  resolution: "@toife/sass-layer@file:../sass-layer#../sass-layer::hash=17a4e9&locator=doc-page%40workspace%3A."
+  version: 1.1.0
+  resolution: "@toife/sass-layer@file:../sass-layer#../sass-layer::hash=e7f661&locator=doc-page%40workspace%3A."
   peerDependencies:
     sass: ">=1.50.0"
-  checksum: 10c0/c2a56e823cd45be880daef3eff9a25a97e1df7fd0cf23ce596a7b88fb1d29a9661ccb099ee3c84fa773a8c4b143c753eaddbbe12e94d3e89180f53d6d223dc93
+  checksum: 10c0/38b8a1747ae9f7dbca98ecdfafb535e5a285735268618d12807fb516f54c3532cbdab765f96af9321fb76533662de7791f5be8af837733b7031388b95320a2b1
   languageName: node
   linkType: hard
 
 "@toife/vue@file:../vue::locator=doc-page%40workspace%3A.":
-  version: 3.1.0
-  resolution: "@toife/vue@file:../vue#../vue::hash=30c00c&locator=doc-page%40workspace%3A."
+  version: 3.1.4
+  resolution: "@toife/vue@file:../vue#../vue::hash=0e7347&locator=doc-page%40workspace%3A."
   peerDependencies:
     vue: ^3.5.0
     vue-router: ^4.0.0
-  checksum: 10c0/948fcccbfbb814394b299863213bf633a346593f8dfb1bb0fe6a745a9a0dd62802538521f901bdcd197c8ee7a8f752e67f5e733f4440603489d3a8c746e95bb5
+  checksum: 10c0/38cfd9d8ff5eaf0ba60412d5b028e7cd6636c502d011c994b2a6dbac6a12c35e6847c4da3222b7290bebb0fc3079bda6cd7eeb3c9aaeae7a0ec11b049cf116d6
   languageName: node
   linkType: hard
 
@@ -1666,7 +1666,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "doc-page@workspace:."
   dependencies:
-    "@toife/gesture": "file:../gesture"
+    "@toife/gesture": "npm:^1.1.5"
     "@toife/sass-layer": "file:../sass-layer"
     "@toife/vue": "file:../vue"
     "@types/node": "npm:^22.10.0"

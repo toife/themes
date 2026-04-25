@@ -3,7 +3,7 @@
 // IMPORTANT: Load sass-layer with config FIRST (before themes) so custom config applies
 @use "@toife/sass-layer" as sass;
 @include sass.theme-generate();
-@include sass.class-generate();
+@include sass.util-generate();
 
 body {
   height: 100vh;

@@ -1,10 +1,10 @@
 <template>
-  <t-page class="p-4">
+  <t-page class="padding-4">
     <t-card role="mode">
       <t-card-header>Example</t-card-header>
       <t-card-body>
         <div>
-          <t-radio-group v-model="role" orientation="horizontal">
+          <t-radio-group v-model="role" direction="horizontal">
             <t-radio value="mode" role="mode">Mode</t-radio>
             <t-radio value="reverse" role="reverse">Reverse</t-radio>
             <t-radio value="primary" role="primary">Primary</t-radio>
@@ -14,16 +14,16 @@
             <t-radio value="danger" role="danger">Danger</t-radio>
           </t-radio-group>
         </div>
-        <t-divider class="my-4" />
+        <t-divider class="margin-y-4" />
         <p class="section-label">Horizontal</p>
-        <t-form-group orientation="horizontal">
+        <t-form-group direction="horizontal">
           <label class="form-label">Name</label>
           <t-field v-model="name" :role="role" placeholder="Your name" />
         </t-form-group>
-        <t-divider class="my-4" />
+        <t-divider class="margin-y-4" />
         <p class="section-label">Vertical</p>
         <div class="form-vertical">
-          <t-form-group orientation="vertical">
+          <t-form-group direction="vertical">
             <label class="form-label-vertical">Email</label>
             <t-field v-model="email" :role="role" type="email" placeholder="you@example.com" />
           </t-form-group>

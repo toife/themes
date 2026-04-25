@@ -2,21 +2,21 @@
   <t-app :shape="shape" :divider="isDivider" :shadow="isShadow" :direction="direction">
     <t-cable placement="top" class="top-cable" :style="{'visibility': isShowHeader ? 'visible' : 'hidden'}" :class="{'active': route.name !== 'home'}">
       <t-toolbar class="header-toolbar">
-       <div class="header-toolbar-controls">
+       <div class="header-toolbar-controls padding-x-4 padding-y-2">
         <img src="/toife.png" alt="Logo" class="logo">
           <!-- <t-switch v-model="isDarkMode">Dark Mode</t-switch> -->
           <t-switch v-model="isShadow">Shadow</t-switch>
           <t-switch v-model="isDivider">Divider</t-switch>
           <div class="header-group-controls">
             <label for="direction">Direction:</label>
-            <t-radio-group id="direction" v-model="direction" orientation="horizontal">
+            <t-radio-group id="direction" v-model="direction" direction="horizontal">
               <t-radio value="left">Left</t-radio>
               <t-radio value="right">Right</t-radio>
             </t-radio-group>
           </div>
           <div class="header-group-controls">
             <label for="shape">Shape:</label>
-            <t-radio-group id="shape" v-model="shape" orientation="horizontal">
+            <t-radio-group id="shape" v-model="shape" direction="horizontal">
               <t-radio value="rounded">Rounded</t-radio>
               <t-radio value="flat">Flat</t-radio>
               <t-radio value="pill">Pill</t-radio>
@@ -41,12 +41,7 @@
   }
 }
 
-:deep(.header-toolbar > div > *) {
-  flex: none !important;
-}
-
 :deep(.header-toolbar) {
-  padding: 0 1rem;
   border-bottom: 1px solid rgba(0, 0, 0, 0.08);
 }
 
