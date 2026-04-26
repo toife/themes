@@ -1106,20 +1106,20 @@ __metadata:
 
 "@toife/sass-layer@file:../sass-layer::locator=doc-page%40workspace%3A.":
   version: 1.1.0
-  resolution: "@toife/sass-layer@file:../sass-layer#../sass-layer::hash=e7f661&locator=doc-page%40workspace%3A."
+  resolution: "@toife/sass-layer@file:../sass-layer#../sass-layer::hash=75b656&locator=doc-page%40workspace%3A."
   peerDependencies:
     sass: ">=1.50.0"
-  checksum: 10c0/38b8a1747ae9f7dbca98ecdfafb535e5a285735268618d12807fb516f54c3532cbdab765f96af9321fb76533662de7791f5be8af837733b7031388b95320a2b1
+  checksum: 10c0/c18ba5f26e7cd7887b1b4885865ba495de632a7ad917b57f24c1beff4378712a9b0e0f5581264b2360020fbaf85ab422a67410412da31d5bc9ede2e058cf64b8
   languageName: node
   linkType: hard
 
 "@toife/vue@file:../vue::locator=doc-page%40workspace%3A.":
   version: 3.1.4
-  resolution: "@toife/vue@file:../vue#../vue::hash=0e7347&locator=doc-page%40workspace%3A."
+  resolution: "@toife/vue@file:../vue#../vue::hash=e9b38e&locator=doc-page%40workspace%3A."
   peerDependencies:
     vue: ^3.5.0
     vue-router: ^4.0.0
-  checksum: 10c0/38cfd9d8ff5eaf0ba60412d5b028e7cd6636c502d011c994b2a6dbac6a12c35e6847c4da3222b7290bebb0fc3079bda6cd7eeb3c9aaeae7a0ec11b049cf116d6
+  checksum: 10c0/90de558850df32558fc989b30cf5af51a40f51b250d1902ba5e1e4538f5f0a2fb7cddf93137d1be5f74f918da2ac10f0c1c456829e53e92af279cd0c39687a85
   languageName: node
   linkType: hard
 
