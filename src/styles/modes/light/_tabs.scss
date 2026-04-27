@@ -1,16 +1,5 @@
 $mode: (
-  "underline" : (
-    "border-color": ("light", 700),
-    "color": (
-      "": ("dark", 900),
-      "hover": ("dark", 800),
-      "focus": ("dark", 900),
-      "active": ("dark", 900),
-      "disabled": ("dark", 400),
-    ),
-  ),
-  
-  "fill" : (
+  "fill": (
     "border-color": (
       "": ("light", 700),
       "hover": ("light", 900),
@@ -33,38 +22,41 @@ $mode: (
       "disabled": ("light", 400),
     ),
   ),
-
-  "text" : (
+  "underline": (
+    "border-color": (
+      "": ("light", 700),
+      "hover": ("light", 900),
+      "focus": ("light", 850),
+      "active": ("light", 850),
+      "disabled": ("light", 400),
+    ),
     "color": (
       "": ("dark", 900),
       "hover": ("dark", 800),
       "focus": ("dark", 900),
       "active": ("dark", 900),
       "disabled": ("dark", 400),
-    ),
+    )
+  ),
+  "text": (
+    "color": (
+      "": ("dark", 900),
+      "hover": ("dark", 800),
+      "focus": ("dark", 900),
+      "active": ("dark", 900),
+      "disabled": ("dark", 400),
+    )
   ),
 );
 
-
 $reverse: (
-  "underline" : (
-    "border-color": ("dark", 700),
-    "color": (
-      "": ("light", 900),
-      "hover": ("light", 800),
-      "focus": ("light", 900),
-      "active": ("light", 900),
-      "disabled": ("light", 400),
-    ),
-  ),
-  
-  "fill" : (
+  "fill": (
     "border-color": (
-      "": ("dark", 700),
+      "": ("light", 700),
       "hover": ("light", 900),
-      "focus": ("dark", 850),
-      "active": ("dark", 850),
-      "disabled": ("dark", 400),
+      "focus": ("light", 850),
+      "active": ("light", 850),
+      "disabled": ("light", 400),
     ),
     "color": (
       "": ("dark", 900),
@@ -81,250 +73,285 @@ $reverse: (
       "disabled": ("light", 400),
     ),
   ),
-
-  "text" : (
+  "underline": (
+    "border-color": (
+      "": ("light", 700),
+      "hover": ("light", 900),
+      "focus": ("light", 850),
+      "active": ("light", 850),
+      "disabled": ("light", 400),
+    ),
     "color": (
       "": ("dark", 900),
       "hover": ("dark", 800),
       "focus": ("dark", 900),
       "active": ("dark", 900),
       "disabled": ("dark", 400),
-    ),
+    )
+  ),
+  "text": (
+    "color": (
+      "": ("dark", 900),
+      "hover": ("dark", 800),
+      "focus": ("dark", 900),
+      "active": ("dark", 900),
+      "disabled": ("dark", 400),
+    )
   ),
 );
 
 $primary: (
-  "underline" : (
-    "border-color": ("primary", 550),
-    "color": (
-      "": ("light", 900),
-      "hover": ("light", 800),
-      "focus": ("light", 900),
-      "active": ("light", 900),
-      "disabled": ("light", 400),
-    ),
-  ),
-  
-  "fill" : (
+  "fill": (
     "border-color": (
-      "": ("primary", 550),
-      "hover": ("primary", 650),
-      "focus": ("primary", 750),
-      "active": ("primary", 750),
-      "disabled": ("primary", 250),
+      "": ("light", 700),
+      "hover": ("light", 900),
+      "focus": ("light", 850),
+      "active": ("light", 850),
+      "disabled": ("light", 400),
     ),
     "color": (
-      "": ("light", 900),
-      "hover": ("light", 800),
-      "focus": ("light", 900),
-      "active": ("light", 900),
-      "disabled": ("light", 400),
+      "": ("dark", 900),
+      "hover": ("dark", 800),
+      "focus": ("dark", 900),
+      "active": ("dark", 900),
+      "disabled": ("dark", 400),
     ),
     "background-color": (
-      "": ("primary", 550),
-      "hover": ("primary", 650),
-      "focus": ("primary", 750),
-      "active": ("primary", 750),
-      "disabled": ("primary", 250),
+      "": ("light", 700),
+      "hover": ("light", 900),
+      "focus": ("light", 850),
+      "active": ("light", 850),
+      "disabled": ("light", 400),
     ),
   ),
-
-  "text" : (
-    "color": (
-      "": ("primary", 550),
-      "hover": ("primary", 650),
-      "focus": ("primary", 750),
-      "active": ("primary", 750),
-      "disabled": ("primary", 250),
+  "underline": (
+    "border-color": (
+      "": ("light", 700),
+      "hover": ("light", 900),
+      "focus": ("light", 850),
+      "active": ("light", 850),
+      "disabled": ("light", 400),
     ),
+    "color": (
+      "": ("dark", 900),
+      "hover": ("dark", 800),
+      "focus": ("dark", 900),
+      "active": ("dark", 900),
+      "disabled": ("dark", 400),
+    ),
+  ),
+  "text": (
+    "color": (
+      "": ("dark", 900),
+      "hover": ("dark", 800),
+      "focus": ("dark", 900),
+      "active": ("dark", 900),
+      "disabled": ("dark", 400),
+    )
   ),
 );
 
 $success: (
-  "underline" : (
-    "border-color": ("success", 550),
-    "color": (
-      "": ("light", 900),
-      "hover": ("light", 800),
-      "focus": ("light", 900),
-      "active": ("light", 900),
-      "disabled": ("light", 400),
-    ),
-  ),
-  
-  "fill" : (
+  "fill": (
     "border-color": (
-      "": ("success", 550),
-      "hover": ("success", 650),
-      "focus": ("success", 750),
-      "active": ("success", 750),
-      "disabled": ("success", 250),
+      "": ("light", 700),
+      "hover": ("light", 900),
+      "focus": ("light", 850),
+      "active": ("light", 850),
+      "disabled": ("light", 400),
     ),
     "color": (
-      "": ("light", 900),
-      "hover": ("light", 800),
-      "focus": ("light", 900),
-      "active": ("light", 900),
-      "disabled": ("light", 400),
+      "": ("dark", 900),
+      "hover": ("dark", 800),
+      "focus": ("dark", 900),
+      "active": ("dark", 900),
+      "disabled": ("dark", 400),
     ),
     "background-color": (
-      "": ("success", 550),
-      "hover": ("success", 650),
-      "focus": ("success", 750),
-      "active": ("success", 750),
-      "disabled": ("success", 250),
+      "": ("light", 700),
+      "hover": ("light", 900),
+      "focus": ("light", 850),
+      "active": ("light", 850),
+      "disabled": ("light", 400),
     ),
   ),
-
-  "text" : (
-    "color": (
-      "": ("success", 550),
-      "hover": ("success", 650),
-      "focus": ("success", 750),
-      "active": ("success", 750),
-      "disabled": ("success", 250),
+  "underline": (
+    "border-color": (
+      "": ("light", 700),
+      "hover": ("light", 900),
+      "focus": ("light", 850),
+      "active": ("light", 850),
+      "disabled": ("light", 400),
     ),
+    "color": (
+      "": ("dark", 900),
+      "hover": ("dark", 800),
+      "focus": ("dark", 900),
+      "active": ("dark", 900),
+      "disabled": ("dark", 400),
+    ),
+  ),
+  "text": (
+    "color": (
+      "": ("dark", 900),
+      "hover": ("dark", 800),
+      "focus": ("dark", 900),
+      "active": ("dark", 900),
+      "disabled": ("dark", 400),
+    )
   ),
 );
 
 $info: (
-  "underline" : (
-    "border-color": ("info", 550),
-    "color": (
-      "": ("light", 900),
-      "hover": ("light", 800),
-      "focus": ("light", 900),
-      "active": ("light", 900),
+  "fill": (
+    "border-color": (
+      "": ("light", 700),
+      "hover": ("light", 900),
+      "focus": ("light", 850),
+      "active": ("light", 850),
       "disabled": ("light", 400),
+    ),
+    "color": (
+      "": ("dark", 900),
+      "hover": ("dark", 800),
+      "focus": ("dark", 900),
+      "active": ("dark", 900),
+      "disabled": ("dark", 400),
     ),
   ),
-  
-  "fill" : (
+  "underline": (
     "border-color": (
-      "": ("info", 550),
-      "hover": ("info", 650),
-      "focus": ("info", 750),
-      "active": ("info", 750),
-      "disabled": ("info", 250),
+      "": ("light", 700),
+      "hover": ("light", 900),
+      "focus": ("light", 850),
+      "active": ("light", 850),
+      "disabled": ("light", 400),
     ),
     "color": (
-      "": ("light", 900),
-      "hover": ("light", 800),
-      "focus": ("light", 900),
-      "active": ("light", 900),
-      "disabled": ("light", 400),
+      "": ("dark", 900),
+      "hover": ("dark", 800),
+      "focus": ("dark", 900),
+      "active": ("dark", 900),
+      "disabled": ("dark", 400),
     ),
     "background-color": (
-      "": ("info", 550),
-      "hover": ("info", 650),
-      "focus": ("info", 750),
-      "active": ("info", 750),
-      "disabled": ("info", 250),
+      "": ("light", 700),
+      "hover": ("light", 900),
+      "focus": ("light", 850),
+      "active": ("light", 850),
+      "disabled": ("light", 400),
     ),
   ),
-
-  "text" : (
+  "text": (
     "color": (
-      "": ("info", 550),
-      "hover": ("info", 650),
-      "focus": ("info", 750),
-      "active": ("info", 750),
-      "disabled": ("info", 250),
-    ),
+      "": ("dark", 900),
+      "hover": ("dark", 800),
+      "focus": ("dark", 900),
+      "active": ("dark", 900),
+      "disabled": ("dark", 400),
+    )
   ),
 );
 
 $warning: (
-  "underline" : (
-    "border-color": ("warning", 550),
-    "color": (
-      "": ("light", 900),
-      "hover": ("light", 800),
-      "focus": ("light", 900),
-      "active": ("light", 900),
-      "disabled": ("light", 400),
-    ),
-  ),
-  
-  "fill" : (
+  "fill": (
     "border-color": (
-      "": ("warning", 550),
-      "hover": ("warning", 650),
-      "focus": ("warning", 750),
-      "active": ("warning", 750),
-      "disabled": ("warning", 250),
+      "": ("light", 700),
+      "hover": ("light", 900),
+      "focus": ("light", 850),
+      "active": ("light", 850),
+      "disabled": ("light", 400),
     ),
     "color": (
-      "": ("light", 900),
-      "hover": ("light", 800),
-      "focus": ("light", 900),
-      "active": ("light", 900),
-      "disabled": ("light", 400),
+      "": ("dark", 900),
+      "hover": ("dark", 800),
+      "focus": ("dark", 900),
+      "active": ("dark", 900),
+      "disabled": ("dark", 400),
     ),
     "background-color": (
-      "": ("warning", 550),
-      "hover": ("warning", 650),
-      "focus": ("warning", 750),
-      "active": ("warning", 750),
-      "disabled": ("warning", 250),
+      "": ("light", 700),
+      "hover": ("light", 900),
+      "focus": ("light", 850),
+      "active": ("light", 850),
+      "disabled": ("light", 400),
     ),
   ),
-
-  "text" : (
-    "color": (
-      "": ("warning", 550),
-      "hover": ("warning", 650),
-      "focus": ("warning", 750),
-      "active": ("warning", 750),
-      "disabled": ("warning", 250),
+  "underline": (
+    "border-color": (
+      "": ("light", 700),
+      "hover": ("light", 900),
+      "focus": ("light", 850),
+      "active": ("light", 850),
+      "disabled": ("light", 400),
     ),
+    "color": (
+      "": ("dark", 900),
+      "hover": ("dark", 800),
+      "focus": ("dark", 900),
+      "active": ("dark", 900),
+      "disabled": ("dark", 400),
+    ),
+  ),
+  "text": (
+    "color": (
+      "": ("dark", 900),
+      "hover": ("dark", 800),
+      "focus": ("dark", 900),
+      "active": ("dark", 900),
+      "disabled": ("dark", 400),
+    )
   ),
 );
 
 $danger: (
-  "underline" : (
-    "border-color": ("danger", 550),
-    "color": (
-      "": ("light", 900),
-      "hover": ("light", 800),
-      "focus": ("light", 900),
-      "active": ("light", 900),
-      "disabled": ("light", 400),
-    ),
-  ),
-  
-  "fill" : (
+  "fill": (
     "border-color": (
-      "": ("danger", 550),
-      "hover": ("danger", 650),
-      "focus": ("danger", 750),
-      "active": ("danger", 750),
-      "disabled": ("danger", 250),
+      "": ("light", 700),
+      "hover": ("light", 900),
+      "focus": ("light", 850),
+      "active": ("light", 850),
+      "disabled": ("light", 400),
     ),
     "color": (
-      "": ("light", 900),
-      "hover": ("light", 800),
-      "focus": ("light", 900),
-      "active": ("light", 900),
-      "disabled": ("light", 400),
+      "": ("dark", 900),
+      "hover": ("dark", 800),
+      "focus": ("dark", 900),
+      "active": ("dark", 900),
+      "disabled": ("dark", 400),
     ),
     "background-color": (
-      "": ("danger", 550),
-      "hover": ("danger", 650),
-      "focus": ("danger", 750),
-      "active": ("danger", 750),
-      "disabled": ("danger", 250),
+      "": ("light", 700),
+      "hover": ("light", 900),
+      "focus": ("light", 850),
+      "active": ("light", 850),
+      "disabled": ("light", 400),
     ),
   ),
-
-  "text" : (
-    "color": (
-      "": ("danger", 550),
-      "hover": ("danger", 650),
-      "focus": ("danger", 750),
-      "active": ("danger", 750),
-      "disabled": ("danger", 250),
+  "underline": (
+    "border-color": (
+      "": ("light", 700),
+      "hover": ("light", 900),
+      "focus": ("light", 850),
+      "active": ("light", 850),
+      "disabled": ("light", 400),
     ),
+    "color": (
+      "": ("dark", 900),
+      "hover": ("dark", 800),
+      "focus": ("dark", 900),
+      "active": ("dark", 900),
+      "disabled": ("dark", 400),
+    ),
+  ),
+  "text": (
+    "color": (
+      "": ("dark", 900),
+      "hover": ("dark", 800),
+      "focus": ("dark", 900),
+      "active": ("dark", 900),
+      "disabled": ("dark", 400),
+    )
   ),
 );
 
