@@ -10,7 +10,6 @@
 @use "select";
 @use "modal";
 @use "field";
-@use "decision-modal";
 @use "collapse";
 @use "checkbox";
 @use "card";
@@ -36,7 +35,6 @@ $mode: (
   "select": select.$layer-select,
   "modal": modal.$layer-modal,
   "field": field.$layer-field,
-  "decision-modal": decision-modal.$layer-decision-modal,
   "collapse": collapse.$layer-collapse,
   "checkbox": checkbox.$layer-checkbox,
   "card": card.$layer-card,

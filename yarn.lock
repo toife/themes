@@ -1115,11 +1115,11 @@ __metadata:
 
 "@toife/vue@file:../vue::locator=doc-page%40workspace%3A.":
   version: 3.1.5
-  resolution: "@toife/vue@file:../vue#../vue::hash=506bdd&locator=doc-page%40workspace%3A."
+  resolution: "@toife/vue@file:../vue#../vue::hash=3ac241&locator=doc-page%40workspace%3A."
   peerDependencies:
     vue: ^3.5.0
     vue-router: ^4.0.0
-  checksum: 10c0/961b5b8b5fc2b2bedeebf148110cd0d4931a6247bbc525688e3b6bb59a0442fa944b9fcb57e0affd6ed07fadacbd22c282af06e742d48b44878abd149aae8164
+  checksum: 10c0/e803ef016194b5e8dd7ce16cd4b2ed9ca351e2dfffccc45cfa2dd8730b0eb61cfc76bdd705e3ad5e488d45e83ab2a1a44bee06a968b72102b55c37b51524bba2
   languageName: node
   linkType: hard
 

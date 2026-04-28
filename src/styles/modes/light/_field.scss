@@ -1,36 +1,57 @@
 $mode: (
   "background-color": ("light", 700),
   "border-color": ("light", 700),
+  "color": ("light", 700),
+  "placeholder-color": ("light", 400),
+  "help-color": ("light", 400),
 );
 
 $reverse: (
   "background-color": ("dark", 700),
   "border-color": ("dark", 700),
+  "color": ("dark", 700),
+  "placeholder-color": ("dark", 400),
+  "help-color": ("dark", 400),
 );
 
 $primary: (
   "background-color": ("primary", 550),
   "border-color": ("primary", 550),
+  "color": ("primary", 550),
+  "placeholder-color": ("primary", 100),
+  "help-color": ("primary", 100),
 );
 
 $success: (
   "background-color": ("success", 550),
   "border-color": ("success", 550),
+  "color": ("success", 550),
+  "placeholder-color": ("success", 100),
+  "help-color": ("success", 100),
 );
 
 $info: (
   "background-color": ("info", 550),
   "border-color": ("info", 550),
+  "color": ("info", 550),
+  "placeholder-color": ("info", 100),
+  "help-color": ("info", 100),
 );
 
 $warning: (
   "background-color": ("warning", 550),
   "border-color": ("warning", 550),
+  "color": ("warning", 550),
+  "placeholder-color": ("warning", 100),
+  "help-color": ("warning", 100),
 );
 
 $danger: (
   "background-color": ("danger", 550),
   "border-color": ("danger", 550),
+  "color": ("danger", 550),
+  "placeholder-color": ("danger", 100),
+  "help-color": ("danger", 100),
 );
 
 $layer-field: (
